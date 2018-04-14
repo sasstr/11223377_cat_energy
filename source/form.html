@@ -22,7 +22,7 @@
             <a class="navigation-list__item-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__item-link">Подбор программы</a>
+            <a class="navigation-list__item-link navigation-list__item-link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -31,24 +31,24 @@
       <h1 class="main-content__title">Подбор программы</h1>
       <form class="main-content__form form-info" action="echo.htmlacademy.ru">
         <h3 class="form-info__title">Заполните анкету и мы подберем программу для вашего кота</h3>
-        <label class="form-info__name form-info--state" for="cat-name">Имя:*</label>
+        <label class="form-info__input-text" for="cat-name">Имя:*</label>
         <input class="form-info__value" type="text" name="cat-name" id="cat-name">
-        <label class="form-info__name form-info--state" for="cat-weight">Вес (кг):*</label>
+        <label class="form-info__input-text" for="cat-weight">Вес (кг):*</label>
         <input class="form-info__value" type="text" name="cat-weight" id="cat-weight">
-        <label class="form-info__name form-info--state" for="cat-age">Возраст (Лет)</label>
+        <label class="form-info__input-text" for="cat-age">Возраст (Лет)</label>
         <input class="form-info__value" type="text" name="cat-age" id="cat-age">
 
         <input type="radio" name="programm" id="lose-weight" checked> <!-- class="visually-hidden"-->
-        <label  class="form-info__programm-type form-info--state" for="lose-weight">Похудение</label>
+        <label  class="form-info__input-radio form-info__input-radio--active" for="lose-weight">Похудение</label>
         <input type="radio" name="programm" id="get-fat"> <!-- class="visually-hidden"-->
-        <label class="form-info__programm-type form-info--state" for="get-fat">Набор массы</label>
+        <label class="form-info__input-radio" for="get-fat">Набор массы</label>
         <input type="radio" name="programm" id="get-advise"> <!-- class="visually-hidden"-->
-        <label class="form-info__programm-type form-info--state" for="get-advise">Не знаю (Нужен ваш совет)</label>
+        <label class="form-info__input-radio" for="get-advise">Не знаю (Нужен ваш совет)</label>
 
         <h3 class="form-info__title form-info__title--decor">Контактные данные (владельца кота)</h3>
-        <label class="form-info__contacts-name form-info--state" for="email">E-mail:*</label>
+        <label class="form-info__input-text form-info__input-text--email" for="email">E-mail:*</label>
         <input class="form-info__contacts-data" type="email" name="email" id="email">
-        <label class="form-info__contacts-name form-info--state" for="phone">Телефон:*</label>
+        <label class="form-info__input-text form-info__input-text--phone" for="phone">Телефон:*</label>
         <input class="form-info__contacts-data" type="tel" name="phone" id="phone">
 
         <h3 class="form-info__title form-info__title--decor">Комментарий</h3>
@@ -56,15 +56,15 @@
 
         <h3 class="form-info__title form-info__title--decor">Дополнительно</h3>
         <input type="checkbox" name="sweetener" id="sweetener"><!-- class="visually-hidden"-->
-        <label class="form-info__add form-info--state" for="sweetener">Сахаразаменитель</label>
+        <label class="form-info__input-checkbox form-info__input-checkbox--active" for="sweetener">Сахаразаменитель</label>
         <input type="checkbox" name="drinking-water" id="drinking-water"><!-- class="visually-hidden"-->
-        <label class="form-info__add form-info--state" for="drinking-water">Питьевая вода</label>
+        <label class="form-info__input-checkbox" for="drinking-water">Питьевая вода</label>
         <input type="checkbox" name="milk" id="milk"><!-- class="visually-hidden"-->
-        <label class="form-info__add form-info--state" for="milk">Молоко</label>
+        <label class="form-info__input-checkbox" for="milk">Молоко</label>
         <input type="checkbox" name="vitamins" id="vitamins"><!-- class="visually-hidden"-->
-        <label class="form-info__add form-info--state" for="vitamins">Витамины</label>
+        <label class="form-info__input-checkbox" for="vitamins">Витамины</label>
 
-        <input class="form-info__button-form-submit form-info--state" type="submit" value="Отправить заявку">
+        <input class="form-info__button-form-submit" type="submit" value="Отправить заявку">
         <span class="form-info__description">*-Обязательные поля</span>
       </form>
     </main>
