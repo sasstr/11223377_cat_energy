@@ -1,0 +1,18 @@
+.navigation-list {
+  @include reset-ul;
+}
+
+.navigation-list__item-link {
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 24px;
+  padding-bottom: 18px;
+  display: inline-block;
+
+}
+
+.navigation-list__item {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}

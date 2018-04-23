@@ -1,0 +1,43 @@
+.slider {
+  background-image: url(../img/index-background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 503px;
+  text-align: center;
+}
+
+.slider__title {
+  display: inline-block;
+  padding-top: 28px;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.slider__content {
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.slider__image {
+  background-image: url(../img/index-can-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 280px;
+  min-height: 271px;
+}
+
+.slider__link {
+  display: inline-block;
+  width: 280px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 72px;
+  padding-right: 72px;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #68b738;
+  color: #fff;
+}

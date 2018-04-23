@@ -1,0 +1,54 @@
+.feature-item {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.feature-item__content {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444;
+}
+
+.feature-item__content::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0px;
+  top: 0px;
+  border: 30px solid #68b738;
+}
+/*
+.feature-item--image-1 {
+  background-image: url(../img/advantage-1.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #999;
+  z-index: 5;
+}
+
+.feature-item--image-2 {
+  background-image: url(../img/advantage-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feature-item--image-3 {
+  background-image: url(../img/advantage-3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feature-item--image-4 {
+  background-image: url(../img/advantage-4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+
+

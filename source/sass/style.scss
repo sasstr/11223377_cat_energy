@@ -1,1 +1,17 @@
-body { background: red; }
+
+@import "global.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "blocks/main-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/navigation-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/option-items-list.scss";
+@import "blocks/features.scss";
+@import "blocks/feature-item.scss";
+@import "blocks/example.scss";
+@import "blocks/example-description";
+@import "blocks/main-footer.scss";
+@import "blocks/main-content.scss";
+@import "blocks/catalog-item.scss";
