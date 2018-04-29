@@ -1,0 +1,13 @@
+.social-list {
+  @include reset-ul;
+  display: flex;
+  justify-content: space-around;
+  min-width: 280px;
+  min-height: 65px;
+}
+
+.social-list__item-link {
+  min-width: 25px;
+  min-height: 25px;
+}
+

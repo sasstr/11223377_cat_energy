@@ -6,6 +6,7 @@
 *.psd
 *.zip
 *.sublime*
+.idea/*
 .vscode/*
 source/preview/*
 source/*.docx
