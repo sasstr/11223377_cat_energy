@@ -1,0 +1,150 @@
+.form-info {
+  margin: 0 20px;
+}
+
+.form-info__title {
+  display: block;
+  width: 227px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  &--decor-contacts {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
+    width: 201px;
+    position: relative;
+  }
+
+  &--decor-comment {
+    width: 140px;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  &--decor-add {
+    width: 140px;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  &--decor-contacts::before {
+    position: absolute;
+    content: "";
+    width: 99px;
+    height: 3px;
+    top: 15px;
+    right: -97px;
+    background-color: #68b738;
+  }
+
+  &--decor-comment::before {
+    position: absolute;
+    content: "";
+    width: 158px;
+    height: 3px;
+    top: 15px;
+    right: -158px;
+    background-color: #68b738;
+  }
+
+  &--decor-add::before {
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 3px;
+    top: 15px;
+    right: -158px;
+    background-color: #68b738;
+  }
+}
+
+.form-info__wrapper {
+  margin-bottom: 15px;
+}
+
+.form-info__radio-wrapper {
+  margin-bottom: 23px;
+
+  &--start {
+    padding-top: 28px;
+  }
+}
+
+.form-info__input-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    padding-right: 14px;
+  }
+
+.form-info__value {
+    min-height: 45px;
+    border: 1px solid #e6e6e6;
+    padding-left: 15px;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    font: inherit;
+    text-transform: uppercase;
+
+    &--cat-name {
+      min-width: 229px;
+    }
+
+    &--cat-weight {
+      min-width: 207px;
+    }
+
+    &--cat-age {
+      min-width: 181px;
+      margin-bottom: 8px;
+    }
+}
+
+.form-info__radio-block {
+  min-height: 157px;
+}
+
+.form-info__label-radio {
+  padding-left: 15px;
+}
+
+.form-info__input-radio {
+  margin: 0;
+  padding: 0;
+}
+
+.form-info__input-text-wrapper {
+  margin-bottom: 14px;
+}
+
+.form-info__contacts-data {
+  min-height: 45px;
+  border: 1px solid #e6e6e6;
+  padding-left: 15px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  font: inherit;
+  text-transform: uppercase;
+
+  &--email {
+    min-width: 216px;
+  }
+
+  &--tel {
+    min-width: 201px;
+  }
+}
+

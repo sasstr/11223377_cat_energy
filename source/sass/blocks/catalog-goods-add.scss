@@ -1,36 +1,36 @@
 .catalog-goods-add {
   min-height: 210px;
   padding-bottom: 25px;
-
-  &__title {
-    padding-top: 80px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-align: center;
-  }
-
-  &__content {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: normal;
-    text-align: center;
-    padding-bottom: 22px;
-  }
-
-  &__link {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #f2f2f2;
-    color: #222;
-    min-width: 280px;
-    min-height: 40px;
-  }
 }
 
+.catalog-goods-add__title {
+  padding-top: 80px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: center;
+}
 
+.catalog-goods-add__content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.catalog-goods-add__link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  color: #222;
+  min-width: 280px;
+  min-height: 40px;
+  padding-bottom: 9px;
+  padding-top: 11px;
+}

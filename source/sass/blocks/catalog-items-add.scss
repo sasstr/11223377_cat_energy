@@ -2,11 +2,22 @@
   margin: 0 20px;
 
   &__title {
+    position: relative;
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
     margin-top: 30px;
     margin-bottom: 28px;
+  }
+
+  &__title::before {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 2px;
+    top: 15px;
+    right: -20px;
+    background-color: #68b738;
   }
 
   &__promo {
@@ -16,6 +27,7 @@
   }
 
   &__promo-content {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -27,5 +39,16 @@
     padding-left: 60px;
     padding-right: 60px;
     text-align: center;
+  }
+
+  &__promo-content::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 60px;
+    top: 65px;
+    left: 113px;
+    background-image: url(../img/buscket-promo-block.svg);
+    background-repeat: no-repeat;
   }
 }
