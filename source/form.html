@@ -61,26 +61,32 @@
         </div>
         <h3 class="form-info__title form-info__title--decor-contacts">Контактные данные (владельца кота)</h3>
         <div class="form-info__input-text-wrapper">
-          <label class="form-info__input-text form-info__input-text--email" for="email">E-mail:*</label>
+          <label class="form-info__input-text-data form-info__input-text-data--email" for="email">E-mail:*</label>
           <input class="form-info__contacts-data form-info__contacts-data--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
         </div>
         <div class="form-info__input-text-wrapper">
-          <label class="form-info__input-text form-info__input-text--phone" for="phone">Телефон:*</label>
+          <label class="form-info__input-text-data form-info__input-text-data--phone" for="phone">Телефон:*</label>
           <input class="form-info__contacts-data form-info__contacts-data--tel" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
         </div>
         <h3 class="form-info__title form-info__title--decor-comment">Комментарий</h3>
-        <textarea class="form-info__comments" name="comments" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-
+        <textarea class="form-info__comments" name="comments" id="comments" cols="37" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
         <h3 class="form-info__title form-info__title--decor-add">Дополнительно</h3>
-        <input class="form-info__input-checkbox" type="checkbox" name="sweetener" id="sweetener"><!-- class="visually-hidden"-->
-        <label class="form-info__label-checkbox " for="sweetener">Сахаразаменитель</label>
-        <input class="form-info__input-checkbox" type="checkbox" name="drinking-water" id="drinking-water"><!-- class="visually-hidden"-->
-        <label class="form-info__label-checkbox" for="drinking-water">Питьевая вода</label>
-        <input class="form-info__input-checkbox" type="checkbox" name="milk" id="milk"><!-- class="visually-hidden"-->
-        <label class="form-info__label-checkbox" for="milk">Молоко</label>
-        <input class="form-info__input-checkbox" type="checkbox" name="vitamins" id="vitamins"><!-- class="visually-hidden"-->
-        <label class="form-info__label-checkbox" for="vitamins">Витамины</label>
-
+        <div class="form-info__input-checkbox-wrapper">
+          <input class="form-info__input-checkbox" type="checkbox" name="sweetener" id="sweetener"><!-- class="visually-hidden"-->
+          <label class="form-info__label-checkbox " for="sweetener">Сахаразаменитель</label>
+        </div>
+        <div class="form-info__input-checkbox-wrapper">
+          <input class="form-info__input-checkbox" type="checkbox" name="drinking-water" id="drinking-water"><!-- class="visually-hidden"-->
+          <label class="form-info__label-checkbox" for="drinking-water">Питьевая вода</label>
+        </div>
+        <div class="form-info__input-checkbox-wrapper">
+          <input class="form-info__input-checkbox" type="checkbox" name="milk" id="milk"><!-- class="visually-hidden"-->
+          <label class="form-info__label-checkbox" for="milk">Молоко</label>
+        </div>
+        <div class="form-info__input-checkbox-wrapper">
+          <input class="form-info__input-checkbox" type="checkbox" name="vitamins" id="vitamins"><!-- class="visually-hidden"-->
+          <label class="form-info__label-checkbox" for="vitamins">Витамины</label>
+        </div>
         <input class="form-info__button-form-submit" type="submit" value="Отправить заявку">
         <span class="form-info__description">*-Обязательные поля</span>
       </form>

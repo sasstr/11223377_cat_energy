@@ -84,11 +84,11 @@
 }
 
 .form-info__input-text {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    padding-right: 14px;
-  }
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  padding-right: 14px;
+}
 
 .form-info__value {
     min-height: 45px;
@@ -115,6 +115,27 @@
 
 .form-info__radio-block {
   min-height: 157px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: -20px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 157px;
+    left: -20px;
+    background-color: #ededed;
+  }
 }
 
 .form-info__label-radio {
@@ -134,6 +155,7 @@
   min-height: 45px;
   border: 1px solid #e6e6e6;
   padding-left: 15px;
+  padding-right: 35px;
   padding-top: 14px;
   padding-bottom: 11px;
   font: inherit;
@@ -148,3 +170,94 @@
   }
 }
 
+.form-info__input-text-data {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  padding-right: 14px;
+
+  &--email {
+    position: relative;
+  }
+
+  &--email::before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 15px;
+    top: 0;
+    right: -200px;
+    background-image: url(../img/mail-input-form-page.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    position: relative;
+  }
+
+  &--phone::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -190px;
+    background-image: url(../img/phone-input-form-page.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.form-info__comments {
+  min-width: 280px;
+  resize: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font: inherit;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+}
+
+.form-info__input-checkbox-wrapper {
+  margin-bottom: 23px;
+}
+
+.form-info__label-checkbox {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+
+.form-info__button-form-submit {
+  font: inherit;
+  display: inline-block;
+  border: none;
+  min-width: 280px;
+  min-height: 40px;
+  background-color: #68b738;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 9px;
+  padding-top: 11px;
+  margin-bottom: 21px;
+}
+
+.form-info__description {
+  display: inline-block;
+  min-width: 280px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  text-align: center;
+}
