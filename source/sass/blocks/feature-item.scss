@@ -51,4 +51,91 @@
   background-position: center center;
 } */
 
+@media (min-width: $tablet-width) {
+  .feature-item {
+    position: relative;
+    min-height: 60px;
+    margin-bottom: 0;
+    width: 354px;
+    min-height: 330px;
 
+    &--image-1::after {
+      position: absolute;
+      content: "1";
+      font-family: Oswald, Helvetica, sans-serif;
+      font-size: 281px;
+      font-weight: normal;
+      width: 80px;
+      height: 281px;
+      top: 156px;
+      left: 115px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &--image-2::after {
+      position: absolute;
+      content: "2";
+      font-family: "Oswald";
+      font-size: 281px;
+      font-weight: normal;
+      width: 80px;
+      height: 281px;
+      top: 156px;
+      left: 115px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &--image-3::after {
+      position: absolute;
+      content: "3";
+      font-family: "Oswald";
+      font-size: 281px;
+      font-weight: normal;
+      width: 80px;
+      height: 281px;
+      top: 156px;
+      left: 115px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &--image-4::after {
+      position: absolute;
+      content: "4";
+      font-family: "Oswald";
+      font-size: 281px;
+      font-weight: normal;
+      width: 80px;
+      height: 281px;
+      top: 156px;
+      left: 115px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+
+  .feature-item__content {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 172px;
+    padding-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444;
+    width: 250px;
+  }
+
+  .feature-item__content::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 57px;
+    border: 40px solid #68b738;
+  }
+}
