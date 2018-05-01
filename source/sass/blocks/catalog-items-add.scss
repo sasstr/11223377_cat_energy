@@ -1,54 +1,54 @@
 .catalog-items-add {
   margin: 0 20px;
+}
 
-  &__title {
-    position: relative;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: normal;
-    margin-top: 30px;
-    margin-bottom: 28px;
-  }
+catalog-items-add__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 28px;
+}
 
-  &__title::before {
-    position: absolute;
-    content: "";
-    width: 53px;
-    height: 2px;
-    top: 15px;
-    right: -20px;
-    background-color: #68b738;
-  }
+catalog-items-add__title::before {
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 2px;
+  top: 15px;
+  right: -20px;
+  background-color: #68b738;
+}
 
-  &__promo {
-    min-height: 289px;
-    background-image: url(../img/gift-photo-mobile.jpg);
-    background-repeat: no-repeat;
-  }
+catalog-items-add__promo {
+  min-height: 289px;
+  background-image: url(../img/gift-photo-mobile.jpg);
+  background-repeat: no-repeat;
+}
 
-  &__promo-content {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    color: #fff;
-    margin: 0;
-    padding: o;
-    padding-top: 188px;
-    padding-left: 60px;
-    padding-right: 60px;
-    text-align: center;
-  }
+catalog-items-add__promo-content {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+  padding: o;
+  padding-top: 188px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
 
-  &__promo-content::before {
-    position: absolute;
-    content: "";
-    width: 55px;
-    height: 60px;
-    top: 65px;
-    left: 113px;
-    background-image: url(../img/buscket-promo-block.svg);
-    background-repeat: no-repeat;
-  }
+catalog-items-add__promo-content::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 60px;
+  top: 65px;
+  left: 113px;
+  background-image: url(../img/buscket-promo-block.svg);
+  background-repeat: no-repeat;
 }

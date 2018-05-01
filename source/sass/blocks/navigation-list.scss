@@ -16,3 +16,24 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .navigation-list__item {
+    text-align: center;
+    margin-left: 36px;
+    margin-right: 0;
+
+    &--first-item {
+      margin-left: 0;
+    }
+  }
+
+}

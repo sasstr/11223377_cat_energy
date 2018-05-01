@@ -1,5 +1,10 @@
 .example {
   background-color: #f2f2f2;
+  width: 100%;
+}
+
+.example__wrapper {
+  background-color: #f2f2f2;
   width: 320px;
   margin: 0 auto;
 }
@@ -30,7 +35,9 @@
 }
 
 .example__choose-state {
-  padding-bottom: 35px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  min-height: 400px;
 }
 
 .example__title {
@@ -40,12 +47,60 @@
   margin: 0;
   padding: 0;
   padding-bottom: 43px;
+  margin-bottom: 280px;
 }
 
 .example__switch {
   font-size: 16px;
   line-height: 20px;
 }
+
+.example__switch--state-was {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 280px;
+    top: -280px;
+    left: 0;
+    background-image: url(../img/cat-before-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.example__switch--state-now {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 280px;
+    top: -280px;
+    left: 0;
+    background-image: url(../img/cat-after-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+
+/*
+#was:checked~.example__switch--state-was::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  top: 1px;
+  left: 1px;
+  border: 2px solid #818181;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#now:checked~.example__switch--state-now::before {
+
+} */
 
 .example__choose-state,
 .example__main-title,

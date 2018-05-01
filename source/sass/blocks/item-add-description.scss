@@ -3,15 +3,14 @@
   line-height: 14px;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 13px;
-
-  &__name {
-    text-align: start;
-    min-width: 140px;
-  }
-
-  &__value {
-    text-align: end;
-    min-width: 140px;
-  }
 }
 
+item-add-description__name {
+  text-align: start;
+  min-width: 140px;
+}
+
+item-add-description__value {
+  text-align: end;
+  min-width: 140px;
+}
