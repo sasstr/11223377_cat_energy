@@ -19,18 +19,56 @@
 
   .example-description {
     min-width: 162px;
-    min-height: 75px;
+    min-height: 72px;
+    margin-bottom: 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+
+    &--start {
+      margin-right: 42px;
+    }
   }
 
   .example-description__value {
     display: block;
     font-size: 30px;
     line-height: 37px;
-  }
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 16px;
 
-  .example-description__content {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 14px;
+    &--lose-weight {
+      position: relative;
+    }
+
+    &--lose-weight::before {
+      position: absolute;
+      content: " Снижение веса ";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      width: 114px;
+      height: 10px;
+      top: 66px;
+      left: 23px;
+      background-color: #fff;
+    }
+
+    &--time-wasted {
+      position: relative;
+    }
+
+    &--time-wasted::before {
+      position: absolute;
+      content: " затрачено времени ";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      width: 142px;
+      height: 10px;
+      top: 66px;
+      left: 10px;
+      background-color: #fff;
+    }
   }
 }
