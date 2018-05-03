@@ -12,10 +12,10 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
+  color: #444;
   position: relative;
-}
 
-.main-footer-html-academy-logo__link::before {
+  &::before {
   position: absolute;
   content: "";
   width: 27px;
@@ -24,4 +24,37 @@
   right: -165px;
   background-image: url(../img/footer_logo-html-academyai.svg);
   background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .main-footer-html-academy-logo {
+    min-height: 40x;
+    min-width: 162px;
+    margin: 0 auto;
+    padding-top: 76px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .main-footer-html-academy-logo__link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444;
+    font-weight: normal;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 27px;
+      height: 34px;
+      top: 0;
+      right: -165px;
+      background-image: url(../img/footer_logo-html-academyai.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }
