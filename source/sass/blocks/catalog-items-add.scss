@@ -2,16 +2,17 @@
   margin: 0 20px;
 }
 
-catalog-items-add__title {
+.catalog-items-add__title {
   position: relative;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  color: #111;
   margin-top: 30px;
   margin-bottom: 28px;
 }
 
-catalog-items-add__title::before {
+.catalog-items-add__title::before {
   position: absolute;
   content: "";
   width: 53px;
@@ -21,13 +22,13 @@ catalog-items-add__title::before {
   background-color: #68b738;
 }
 
-catalog-items-add__promo {
+.catalog-items-add__promo {
   min-height: 289px;
   background-image: url(../img/gift-photo-mobile.jpg);
   background-repeat: no-repeat;
 }
 
-catalog-items-add__promo-content {
+.catalog-items-add__promo-content {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -42,7 +43,7 @@ catalog-items-add__promo-content {
   text-align: center;
 }
 
-catalog-items-add__promo-content::before {
+.catalog-items-add__promo-content::before {
   position: absolute;
   content: "";
   width: 55px;
@@ -52,3 +53,75 @@ catalog-items-add__promo-content::before {
   background-image: url(../img/buscket-promo-block.svg);
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+
+  .catalog-items-add {
+    margin: 0 30px;
+  }
+
+  .catalog-items-add__title {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #111;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    background-color: #fff;
+    display: inline-block;
+    min-width: 414px;
+    padding-left: 37px;
+  }
+
+  .catalog-items-add__title::before {
+    position: absolute;
+    content: "";
+    width: 1440px;
+    height: 2px;
+    top: 15px;
+    left: -300px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
+  .catalog-items-add__promo {
+    min-height: 200px;
+    background-image: url(../img/tablet/gift-photo-tablet.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .catalog-items-add__promo-content {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    padding: o;
+    padding-top: 73px;
+    padding-left: 420px;
+    padding-right: 125px;
+    text-align: start;
+  }
+
+  .catalog-items-add__promo-content::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 60px;
+    top: 65px;
+    left: 113px;
+    background-image: url(../img/buscket-promo-block.svg);
+    background-repeat: no-repeat;
+    }
+}
+
+
+
+/* @media (min-width: $desktop-width) {
+
+  }
+}
+ */

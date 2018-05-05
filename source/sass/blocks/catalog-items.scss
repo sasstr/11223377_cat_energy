@@ -1,0 +1,13 @@
+
+
+@media (min-width: $tablet-width) {
+
+  .catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 708px;
+  }
+
+
+}

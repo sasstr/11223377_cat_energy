@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  color: #444;
   padding-bottom: 13px;
 }
 
@@ -13,4 +14,28 @@ item-add-description__name {
 item-add-description__value {
   text-align: end;
   min-width: 140px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .item-add-description {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    padding-bottom: 13px;
+    padding-top: 30px;
+    margin-right: 38px;
+  }
+
+  .item-add-description__name {
+    text-align: end;
+    min-width: 125px;
+  }
+
+  .item-add-description__value {
+    text-align: end;
+    min-width: 96px;
+  }
+
 }

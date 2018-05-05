@@ -1,25 +1,36 @@
 .catalog-item-add {
   min-height: 130px;
   position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #cdcdcd;
+  }
 }
 .catalog-item-add--last-item {
   margin-bottom: 40px;
-}
 
-.catalog-item-add::before {
-  position: absolute;
-  content: "";
-  width: 280px;
-  height: 1px;
-  top: 0;
-  left: 0;
-  background-color: #cdcdcd;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    top: 130px;
+    left: 0;
+    background-color: #cdcdcd;
+  }
 }
 
 .catalog-item-add__title {
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
+  color: #222;
   padding: 0;
   margin: 0;
   padding-top: 14px;
@@ -40,5 +51,70 @@
   padding-bottom: 9px;
   padding-top: 11px;
   margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .catalog-item-add {
+    min-height: 140px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 708px;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #cdcdcd;
+    }
+  }
+  .catalog-item-add--last-item {
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 708px;
+      height: 1px;
+      top: 140px;
+      left: 0;
+      background-color: #cdcdcd;
+    }
+  }
+
+  .catalog-item-add__title {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    margin-left: 38px;
+  }
+
+  .catalog-item-add__order-button {
+    display: inline-block;
+    min-width: 633px;
+    height: 40px;
+    background-color: #68b738;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 9px;
+    padding-top: 11px;
+    margin-bottom: 28px;
+    margin-left: 38px;
+  }
+
 }
 

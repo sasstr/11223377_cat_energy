@@ -23,16 +23,16 @@
   }
 
   .main-content__container {
-    min-width: 768px;
+    min-width: $tablet-width;
   }
 
   .main-content__wrapper {
-    min-width: 768px;
+    min-width: $tablet-width;
   }
 
   .main-content__container-wrapper {
     background-image: none;
-    min-width: 768px;
+    min-width: $tablet-width;
   }
 }
 
