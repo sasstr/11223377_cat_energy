@@ -42,13 +42,15 @@
 
 @media (min-width: $tablet-width) {
   .catalog-goods-add {
-    min-height: 572px;
-    min-width: 324px;
-    padding-bottom: 25px;
+    min-height: 432px;
+    width: 324px;
+    margin-top: 140px;
+    padding-bottom: 0;
+    border: 1px solid rgba(205, 205, 205, .5);
   }
 
   .catalog-goods-add__title {
-    padding-top: 80px;
+    padding-top: 165px;
     font-size: 20px;
     line-height: 20px;
     font-weight: normal;
@@ -65,11 +67,12 @@
     color: #444;
     margin: 0;
     padding: 0;
-    padding-bottom: 22px;
-    margin-bottom: 252px;
+    padding-left: 80px;
+    padding-right: 78px;
+    margin-bottom: 37px;
   }
 
-  .catalog-goods-add__link {
+  .catalog-goods-add__link { // TODO Придумать как прижать кнопку что бы она не зависила от контента который выше!
     display: inline-block;
     font-size: 16px;
     line-height: 20px;
@@ -79,10 +82,12 @@
     text-transform: uppercase;
     color: #444;
     background-color: #f2f2f2;
-    min-width: 280px;
+    min-width: 249px;
     min-height: 40px;
     padding-bottom: 9px;
     padding-top: 11px;
+    margin-left: 38px;
+    margin-bottom: 40px;
   }
 
 }
