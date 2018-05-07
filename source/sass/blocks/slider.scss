@@ -21,7 +21,9 @@
   padding: 0;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   color: #fff;
+  text-transform: uppercase;
   margin-bottom: 25px;
 }
 
@@ -74,9 +76,12 @@
     padding: 0;
     margin-left: 90px;
     padding-bottom: 40px;
+    font-weight: 400;
     font-size: 20px;
+    font-weight: 400;
     line-height: 20px;
     color: #111;
+    text-transform: uppercase;
   }
 
   .slider__image {
@@ -105,5 +110,71 @@
     background-color: #68b738;
     color: #fff;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .slider {
+    min-width: 1300px;
+    background-image: url(../img/desktop/index-can.png) no-repeat 100px 100px,
+                      url(../img/desktop/index-background-desktop.jpg) no-repeat 680px -100px;
+    margin: 0 auto;
+    height: auto;
+    text-align: left;
+    position: relative;
+    z-index: -1;
+  }
+
+  .slider__title {
+    display: inline-block;
+    width: 410px;
+    min-height: 122px;
+    padding-left: 110px;
+    padding-right: 110px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 27px;
+  }
+
+  .slider__content {
+    width: 282px;
+    margin: 0;
+    padding: 0;
+    margin-left: 90px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111;
+    text-transform: uppercase;
+  }
+
+  .slider__image {
+    min-height: 289px;
+     background-image: none;
+    background-repeat: no-repeat;
+    background-position: 500px -300px;
+    z-index: 15;
+  }
+
+  .slider__link {
+    position: absolute;
+    top: 456px;
+    left: 190px;
+    display: inline-block;
+    width: 245px;
+    min-height: 52px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 26px;
+    padding-right: 27px;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #68b738;
+    color: #fff;
+  }
 }

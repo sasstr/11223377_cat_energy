@@ -47,3 +47,19 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    min-height: 59px;
+    background-color: transparent;
+  }
+
+  .main-navigation__menu-button {
+    display: none;
+  }
+}

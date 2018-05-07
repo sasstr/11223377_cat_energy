@@ -38,7 +38,19 @@
 
 @media (min-width: $desktop-width) {
   .main-content {
-    width: 1200px;
     margin: 0 auto;
+  }
+
+  .main-content__container {
+    min-width: $desktop-width;
+  }
+
+  .main-content__wrapper {
+    min-width: $desktop-width;
+  }
+
+  .main-content__container-wrapper {
+    background-image: none;
+    min-width: $desktop-width;
   }
 }

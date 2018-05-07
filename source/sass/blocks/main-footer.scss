@@ -29,6 +29,7 @@
   min-width: 140px;
   min-height: 82px;
   padding-top: 30px;
+  margin-right: 20px;
 }
 
 .main-footer__container {
@@ -62,6 +63,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .main-footer--inner-page {
+    background-color: #f2f2f2;
+  }
+
   .main-footer__wrapper {
     width: 768px;
     margin: 0 auto;
@@ -69,6 +74,10 @@
     justify-content: space-between;
     background-color: #fff;
     min-height: 200px;
+
+    &--inner-page {
+      background-color: #f2f2f2;
+    }
   }
 
   .main-footer__title {
@@ -120,7 +129,9 @@
 
 @media (min-width: $desktop-width) {
   .main-footer {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
   }
+
+  
 }
