@@ -1,4 +1,8 @@
 .main-header {
+  margin: 0 auto;
+}
+
+.main-header__wrapper {
   min-height: 65px;
   width: 320px;
   margin: 0 auto;
@@ -6,15 +10,25 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    width: $tablet-width;
     margin: 0 auto;
   }
 
+  .main-header__wrapper {
+    min-height: 65px;
+    width: $tablet-width;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: 1300px;
+    margin: 0 auto;
+  }
+
+
+  .main-header__wrapper {
+    min-height: 65px;
+    width: $desktop-width;
     margin: 0 auto;
   }
 }

@@ -113,31 +113,34 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .slider {
-    min-width: 1300px;
-    background-image: url(../img/desktop/index-can.png) no-repeat 100px 100px,
-                      url(../img/desktop/index-background-desktop.jpg) no-repeat 680px -100px;
+    min-width: $desktop-width;
     margin: 0 auto;
     height: auto;
     text-align: left;
     position: relative;
-    z-index: -1;
+    margin-top: -500px;
   }
 
   .slider__title {
     display: inline-block;
-    width: 410px;
+    width: 415px;
     min-height: 122px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
     color: #111;
-    margin-bottom: 27px;
+    margin-bottom: 33px;
+    z-index: 4;
+    background-color: transparent;
   }
 
   .slider__content {
+    display: block;
     width: 282px;
     margin: 0;
     padding: 0;
@@ -152,9 +155,9 @@
 
   .slider__image {
     min-height: 289px;
-     background-image: none;
+    background-image: url(../img/desktop/index-can.png);
     background-repeat: no-repeat;
-    background-position: 500px -300px;
+    background-position: 200px -300px;
     z-index: 15;
   }
 
