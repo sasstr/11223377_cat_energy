@@ -11,6 +11,14 @@
   padding-top: 24px;
   padding-bottom: 18px;
   display: inline-block;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .navigation-list__item {

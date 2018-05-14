@@ -99,7 +99,11 @@
   padding-top: 20px;
   padding-left: 20px;
 
-  &::after {
+  &:active {
+    opacity: 0.3;
+  }
+
+/*  &::after {
     position: absolute;
     content: "";
     top: 22px;
@@ -110,8 +114,7 @@
     background: #818181;
   }
 
-  &::before {
-    position: absolute;
+  position: absolute;
     content: "";
     width: 0;
     height: 0;
@@ -120,16 +123,17 @@
     border-width: 6px 0 6px 7px;
     border-style: solid;
     border-color: transparent #818181;
-  }
-/*     position: absolute;
+*/
+  &::before {
+     position: absolute;
     content: "";
     width: 24px;
     height: 11px;
     left: 105px;
     top: 28px;
     background-image: url(../img/option-item__arrow-right.svg);
-    background-repeat: no-repeat; */
-
+    background-repeat: no-repeat;
+    }
 }
 
 @media (min-width: $tablet-width) {

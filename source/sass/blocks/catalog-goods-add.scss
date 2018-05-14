@@ -38,6 +38,15 @@
   min-height: 40px;
   padding-bottom: 9px;
   padding-top: 11px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: rgb(235, 235, 235);
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

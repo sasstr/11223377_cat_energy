@@ -54,6 +54,16 @@
   padding-top: 11px;
   margin-bottom: 24px;
 
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(256, 256, 256, .3);
+  }
+
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
 }
 
 .catalog-page-items__wrapper {

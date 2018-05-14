@@ -62,4 +62,13 @@
   .main-navigation__menu-button {
     display: none;
   }
+
+
+  .main-navigation__link:hover {
+    opacity: 0.8;
+  }
+
+  .main-navigation__link:active {
+    opacity: 0.6;
+  }
 }
