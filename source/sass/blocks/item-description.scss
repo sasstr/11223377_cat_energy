@@ -25,7 +25,7 @@
   .item-description__name {
     position: relative;
     padding-left: 38px;
-    
+
     &::before {
         position: absolute;
         content: "";
@@ -35,10 +35,42 @@
         left: 38px;
         background-color: #cdcdcd;
       }
-
   }
 
+  .item-description__value {
+    text-align: end;
+    padding-right: 38px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+
+  .item-description__name,
+  .item-description__value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #444;
+    min-width: 84px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .item-description__name {
+    position: relative;
+    padding-left: 38px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 249px;
+        height: 1px;
+        top: 27px;
+        left: 38px;
+        background-color: #cdcdcd;
+      }
+  }
 
   .item-description__value {
     text-align: end;
