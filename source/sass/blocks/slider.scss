@@ -28,7 +28,7 @@
 }
 
 .slider__image {
-  background-image: url(../img/index-can-mobile.png);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   min-width: 280px;
@@ -52,6 +52,10 @@
     &:active {
       background-color: #5eaa2f;
       color: rgba(256, 256, 256, .3);
+    }
+
+    &:hover {
+      background-color: #5eaa2f;
     }
 }
 
@@ -90,7 +94,7 @@
   }
 
   .slider__image {
-    background-image: url(../img/tablet/slider-can-tablet.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-position: center;
     min-width: 609px;
@@ -101,19 +105,14 @@
     position: absolute;
     top: 265px;
     left: 95px;
-    display: inline-block;
     width: 245px;
     min-height: 52px;
     padding-top: 16px;
     padding-bottom: 13px;
     padding-left: 26px;
     padding-right: 27px;
-    vertical-align: middle;
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
-    background-color: #68b738;
-    color: #fff;
   }
 }
 
@@ -126,31 +125,34 @@
     text-align: left;
     position: relative;
     margin-top: -500px;
+    margin-bottom: 80px;
   }
 
   .slider__title {
+    box-sizing: content-box;
     display: inline-block;
     width: 415px;
     min-height: 122px;
-    padding-left: 0px;
+    padding-left: 83px;
     padding-right: 0px;
     margin-left: 0;
+    margin-bottom: 33px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
     color: #111;
-    margin-bottom: 33px;
     z-index: 4;
     background-color: transparent;
   }
 
   .slider__content {
+    box-sizing: content-box;
     display: block;
-    width: 282px;
+    width: 285px;
     margin: 0;
     padding: 0;
     margin-left: 90px;
-    padding-bottom: 40px;
+    padding-bottom: 53px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -164,16 +166,12 @@
     left: 420px;
     min-height: 289px;
     background-image: none;
-   /*  background-image: url(../img/desktop/index-can.png);
-    background-repeat: no-repeat;
-    background-position: 200px -300px;
-    z-index: 15; */
   }
 
   .slider__link {
     position: absolute;
-    top: 456px;
-    left: 190px;
+    top: 256px;
+    left: 80px;
     display: inline-block;
     width: 245px;
     min-height: 52px;
@@ -181,22 +179,12 @@
     padding-bottom: 13px;
     padding-left: 26px;
     padding-right: 27px;
-    vertical-align: middle;
-    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
-    background-color: #68b738;
-    color: #fff;
 
     &:active {
       background-color: #5eaa2f;
       color: rgba(256, 256, 256, .3);
-    }
-
-
-    &:hover {
-      background-color: #5eaa2f;
     }
   }
 }
