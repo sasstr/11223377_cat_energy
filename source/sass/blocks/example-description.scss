@@ -6,9 +6,10 @@
 .example-description__value {
   min-width: 124px;
   min-height: 56px;
-  display: block;
+  display: inline-block;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   margin-bottom: 38px;
@@ -55,8 +56,8 @@
     top: 48px;
     left: 5px;
     background-color: #f2f2f2;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -66,9 +67,25 @@
   line-height: 12px;
 }
 
+.example-description__block-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 43px;
+  margin-bottom: 280px;
+}
+
 .example-description__block {
   display: block;
   min-width: 280px;
+  text-align: center;
+}
+
+.example-description__block-price {
   text-align: center;
   color: #111111;
   font-size: 14px;
@@ -83,6 +100,8 @@
     min-width: 162px;
     min-height: 72px;
     margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
 
     &--start {
       margin-right: 42px;
@@ -91,20 +110,13 @@
 
   .example-description__value {
     display: block;
+    width: 162px;
     font-size: 30px;
     line-height: 37px;
-    text-align: center;
     padding-top: 20px;
     padding-bottom: 16px;
 
-    &--lose-weight {
-      position: relative;
-    }
-
     &--lose-weight::before {
-      position: absolute;
-      content: " Снижение веса ";
-      font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 14px;
       width: 114px;
@@ -112,16 +124,11 @@
       top: 66px;
       left: 23px;
       background-color: #fff;
-    }
-
-    &--time-wasted {
-      position: relative;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &--time-wasted::before {
-      position: absolute;
-      content: " затрачено времени ";
-      font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 14px;
       width: 142px;
@@ -129,10 +136,67 @@
       top: 66px;
       left: 10px;
       background-color: #fff;
+      padding-left: 0;
+      padding-right: 0;
     }
+  }
+
+  .example-description__block-title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 43px;
+    margin-bottom: 550px;
+  }
+
+  .example-description__block {
+    display: block;
+    min-width: 174px;
+    margin-left: 167px;
+    text-align: end;
+    padding-top: 13px;
+  }
+
+  .example-description__block-price {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
 
+  .example-description {
+    min-width: 162px;
+    min-height: 86px;
+    flex-wrap: wrap;
+  }
+
+  .example-description__block {
+    margin-left: 0;
+  }
+
+  .example-description__value {
+    width: 162px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+
+    &--lose-weight::before {
+      width: 114px;
+      height: 10px;
+      top: 66px;
+      left: 23px;
+      background-color: #f2f2f2;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--time-wasted::before {
+      width: 142px;
+      height: 10px;
+      top: 66px;
+      left: 10px;
+      background-color: #f2f2f2;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
