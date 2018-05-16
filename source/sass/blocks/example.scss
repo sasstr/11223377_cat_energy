@@ -33,7 +33,10 @@
 .example__description {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+  width: 280px;
+  min-height: 108px;
 }
 
 .example__choose-state {
@@ -156,6 +159,7 @@
 
   .example__description {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: start;
     margin: 0;
     margin-bottom: 20px;

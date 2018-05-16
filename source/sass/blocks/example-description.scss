@@ -4,9 +4,60 @@
 }
 
 .example-description__value {
+  min-width: 124px;
+  min-height: 56px;
   display: block;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+  margin-bottom: 38px;
+
+  &--lose-weight {
+    position: relative;
+    text-align: center;
+    padding-top: 17px;
+  }
+
+  &--lose-weight::before {
+    position: absolute;
+    content: " Снижение веса ";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444;
+    text-align: center;
+    width: 87px;
+    height: 10px;
+    top: 48px;
+    left: 13px;
+    background-color: #f2f2f2;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &--time-wasted {
+    position: relative;
+    text-align: center;
+    padding-top: 13px;
+  }
+
+  &--time-wasted::before {
+    position: absolute;
+    content: " затрачено времени ";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444;
+    text-align: center;
+    width: 108px;
+    height: 10px;
+    top: 48px;
+    left: 5px;
+    background-color: #f2f2f2;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .example-description__content {
@@ -15,14 +66,23 @@
   line-height: 12px;
 }
 
+.example-description__block {
+  display: block;
+  min-width: 280px;
+  text-align: center;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 @media (min-width: $tablet-width) {
 
   .example-description {
     min-width: 162px;
     min-height: 72px;
     margin-bottom: 0;
-    border: 1px solid #cdcdcd;
-    border-radius: 2px;
 
     &--start {
       margin-right: 42px;
@@ -71,4 +131,8 @@
       background-color: #fff;
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }
