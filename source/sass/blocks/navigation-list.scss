@@ -39,7 +39,7 @@
     text-align: center;
     margin-left: 36px;
     margin-right: 0;
-    
+
     &--first-item {
       margin-left: 0;
     }
@@ -50,8 +50,16 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-  }
+    padding-bottom: 9px;
 
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
+
+    &--main-active {
+      border-bottom: 2px solid #68b738;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -62,6 +70,11 @@
     justify-content: space-between;
     min-height: 696px;
     min-width: 470px;
+
+    &--inner-page {
+      min-height: 100px;
+      min-width: 470px;
+    }
 
     &::before {
     position: absolute;
@@ -74,6 +87,15 @@
     background-image: url(../img/desktop/index-background-desktop.jpg);
     }
 
+    &--inner-page::before {
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      top: 0;
+      right: 0;
+    }
+
   }
 
   .navigation-list__item-link {
@@ -81,8 +103,20 @@
     line-height: 25px;
     color: #fff;
     padding-top: 24px;
-    padding-bottom: 18px;
+    padding-bottom: 9px;
     display: inline-block;
+
+    &--inner-page {
+      color: #222;
+    }
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
+
+    &--main-active {
+      border-bottom: 2px solid #fff;
+    }
   }
 
 }
