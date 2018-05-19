@@ -39,7 +39,7 @@
     text-align: center;
     margin-left: 36px;
     margin-right: 0;
-
+    
     &--first-item {
       margin-left: 0;
     }
@@ -61,7 +61,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 696px;
-    min-width: 680px;
+    min-width: 470px;
 
     &::before {
     position: absolute;
@@ -79,7 +79,6 @@
   .navigation-list__item-link {
     font-size: 20px;
     line-height: 25px;
-    font-weight: 400;
     color: #fff;
     padding-top: 24px;
     padding-bottom: 18px;

@@ -13,43 +13,46 @@
   font-size: 14px;
   line-height: 18px;
   color: #444;
-}
 
-.feature-item__content::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  left: 0px;
-  top: 0px;
-  border: 30px solid #68b738;
-}
-/*  не  понял почему их не видно!
-.feature-item--image-1 {
-  background-image: url(../img/advantage-1.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-color: #999;
-  z-index: 5;
-}
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 0px;
+    border: 30px solid #68b738;
+  }
 
-.feature-item--image-2 {
-  background-image: url(../img/advantage-2.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 29px;
+    left: 15px;
+    top: 15px;
+    transform: scale(1.5);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 10;
+  }
 
-.feature-item--image-3 {
-  background-image: url(../img/advantage-3.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  &--image-1::before {
+    background-image: url(../img/retina/advantage-leaf@1x.png);
+    }
 
-.feature-item--image-4 {
-  background-image: url(../img/advantage-4.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
+  &--image-2::before {
+    background-image: url(../img/retina/advantage-powder@1x.png);
+    }
+
+  &--image-3::before {
+    background-image: url(../img/retina/advantage-dining@1x.png);
+    }
+
+  &--image-4::before {
+    background-image: url(../img/retina/advantage-clock@1x.png);
+  }
+}
 
 @media (min-width: $tablet-width) {
   .feature-item {
@@ -126,9 +129,8 @@
     line-height: 18px;
     color: #444;
     width: 250px;
-  }
 
-  .feature-item__content::before {
+    &::after {
     position: absolute;
     content: "";
     width: 0;
@@ -136,14 +138,45 @@
     left: 0px;
     top: 57px;
     border: 40px solid #68b738;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 26px;
+      height: 29px;
+      left: 26px;
+      top: 80px;
+      transform: scale(1.5);
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+      z-index: 10;
+    }
+
+    &--image-1::before {
+      background-image: url(../img/retina/advantage-leaf@1x.png);
+      }
+
+    &--image-2::before {
+      background-image: url(../img/retina/advantage-powder@1x.png);
+      }
+
+    &--image-3::before {
+      background-image: url(../img/retina/advantage-dining@1x.png);
+      }
+
+    &--image-4::before {
+      background-image: url(../img/retina/advantage-clock@1x.png);
+    }
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .feature-item {
     position: relative;
     margin-bottom: 0;
-    width: 325px;
+    width: 305px;
     min-height: 330px;
   }
 }

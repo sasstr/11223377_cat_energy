@@ -89,12 +89,12 @@
 
   .main-footer__title {
     display: inline-block;
-    width: 155px;
+    width: 225px;
     font-size: 20px;
     line-height: 25px;
     margin-left: 20px;
     padding-top: 68px;
-    padding-left: 42px;
+    padding-left: 71px;
   }
 
   .main-footer__contacts {
@@ -104,10 +104,15 @@
     font-size: 16px;
     line-height: 20px;
     color: #444;
-    min-width: 163px;
+    min-width: 225px;
     min-height: 82px;
     padding-top: 64px;
-    padding-right: 42px;
+    padding-right: 72px;
+
+    &--city {
+      display: inline-block;
+      padding-top: 20px;
+    }
   }
 
   .main-footer__column-wrapper {
@@ -150,17 +155,18 @@
     line-height: 25px;
     margin-left: 20px;
     padding-top: 68px;
-    padding-left: 42px;
+    padding-left: 76px;
+    min-width: 230px;
   }
 
   .main-footer__contacts {
     font-size: 16px;
     line-height: 20px;
     color: #444;
-    min-width: 163px;
+    min-width: 245px;
     min-height: 82px;
     padding-top: 64px;
-    padding-right: 42px;
+    padding-right: 90px;
   }
 
   .main-footer__map {
