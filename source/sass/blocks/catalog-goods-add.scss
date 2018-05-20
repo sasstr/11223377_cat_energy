@@ -10,13 +10,15 @@
   font-weight: normal;
   color: #111;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-goods-add__content {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   color: #444;
   margin: 0;
@@ -28,7 +30,7 @@
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
@@ -68,14 +70,7 @@
   }
 
   .catalog-goods-add__content {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 16px;
-    font-weight: normal;
-    text-align: center;
-    color: #444;
-    margin: 0;
-    padding: 0;
     padding-left: 80px;
     padding-right: 78px;
     margin-bottom: 37px;
@@ -85,10 +80,6 @@
     display: inline-block;
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
     color: #444;
     background-color: #f2f2f2;
     min-width: 249px;
@@ -98,5 +89,42 @@
     margin-left: 38px;
     margin-bottom: 40px;
   }
+}
 
+@media (min-width: $desktop-width) {
+
+  .catalog-goods-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 434px;
+    width: 245px;
+    margin-top: 140px;
+  }
+
+  .catalog-goods-add__title {
+    padding-top: 166px;
+    width: 133px;
+  }
+
+  .catalog-goods-add__content {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 0px;
+    width: 166px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .catalog-goods-add__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 169px;
+    min-height: 40px;
+    padding-bottom: 12px;
+    padding-top: 13px;
+    margin-left: 0;
+  }
 }

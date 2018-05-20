@@ -47,7 +47,7 @@
   color: #fff;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 9px;
@@ -131,7 +131,7 @@
     color: #fff;
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 9px;
@@ -153,16 +153,19 @@
 @media (min-width: $desktop-width) {
 
   .catalog-page-items {
-    min-height: 431px;
-    width: 254px;
+    min-height: 574px;
+    width: 245px;
+    padding-top: 60px;
+    justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     background-color: #fff;
     background-image: linear-gradient(
-     #fff 0%, #fff 140px,
+    #fff 0%, #fff 140px,
     #f2f2f2 140px, #f2f2f2 100% );
     background-position: 0 0px;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
 
     &::before {
       position: absolute;
@@ -207,18 +210,17 @@
     color: #fff;
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 9px;
     padding-top: 11px;
     margin-left: 38px;
     margin-bottom: 0px;
-
   }
 
   .catalog-page-items__wrapper {
-    min-width: 255px;
+    min-width: 245px;
   }
 
   .catalog-page-items__description {
