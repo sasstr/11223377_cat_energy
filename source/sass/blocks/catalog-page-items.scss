@@ -29,9 +29,10 @@
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   color: #111;
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-top: 24px;
@@ -111,12 +112,6 @@
     display: inline-block;
     font-size: 20px;
     line-height: 20px;
-    font-weight: normal;
-    color: #111;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    padding: 0;
     padding-top: 24px;
     padding-bottom: 14px;
     margin-left: 98px;
@@ -190,15 +185,10 @@
     display: inline-block;
     font-size: 20px;
     line-height: 20px;
-    font-weight: normal;
-    color: #111;
-    text-transform: uppercase;
     text-align: center;
-    margin: 0;
-    padding: 0;
     padding-top: 24px;
     padding-bottom: 14px;
-    margin-left: 98px;
+    margin-left: 60px;
     min-width: 145px;
   }
 
@@ -217,6 +207,10 @@
     padding-top: 11px;
     margin-left: 38px;
     margin-bottom: 0px;
+  }
+
+  .catalog-page-items__img--1 {
+    height: 172px;
   }
 
   .catalog-page-items__wrapper {

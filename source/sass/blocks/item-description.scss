@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   color: #444;
 }
 
@@ -12,11 +12,7 @@
 
   .item-description__name,
   .item-description__value {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 16px;
-    font-weight: normal;
-    color: #444;
     min-width: 162px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -27,14 +23,14 @@
     padding-left: 38px;
 
     &::before {
-        position: absolute;
-        content: "";
-        width: 249px;
-        height: 1px;
-        top: 27px;
-        left: 38px;
-        background-color: #cdcdcd;
-      }
+      position: absolute;
+      content: "";
+      width: 249px;
+      height: 1px;
+      top: 27px;
+      left: 38px;
+      background-color: #cdcdcd;
+    }
   }
 
   .item-description__value {
@@ -47,14 +43,8 @@
 
   .item-description__name,
   .item-description__value {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 16px;
-    font-weight: normal;
-    color: #444;
     min-width: 84px;
-    padding-top: 7px;
-    padding-bottom: 7px;
   }
 
   .item-description__name {
@@ -64,7 +54,7 @@
     &::before {
         position: absolute;
         content: "";
-        width: 249px;
+        width: 169px;
         height: 1px;
         top: 27px;
         left: 38px;
