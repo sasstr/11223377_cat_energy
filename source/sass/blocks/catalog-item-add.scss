@@ -45,7 +45,7 @@
   color: #fff;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 9px;
@@ -109,21 +109,45 @@
   }
 
   .catalog-item-add__order-button {
-    display: inline-block;
     min-width: 633px;
     height: 40px;
-    background-color: #68b738;
-    color: #fff;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-align: center;
     padding-bottom: 9px;
     padding-top: 11px;
     margin-bottom: 28px;
     margin-left: 38px;
   }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .catalog-item-add {
+    width: 975px;
+    min-height: 71px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 895px;
+      height: 1px;
+      top: 0;
+      left: 0;
+      background-color: #cdcdcd;
+    }
+  }
+
+  .catalog-item-add__order-button {
+    min-width: 245px;
+    height: 40px;
+    padding-bottom: 12px;
+    padding-top: 13px;
+    margin-bottom: 28px;
+    margin-left: 38px;
+    }
 
 }
 
