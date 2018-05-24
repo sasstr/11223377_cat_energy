@@ -34,40 +34,46 @@
         <h1 class="form-page__title">Подбор программы</h1>
         <form class="form-page__form form-info" action="echo.htmlacademy.ru">
           <h3 class="form-info__title">Заполните анкету и мы подберем программу питания для вашего кота</h3>
-          <div class="form-info__wrapper">
-            <label class="form-info__input-text form-info__input-text--cat-name" for="cat-name">Имя:*</label>
-            <input class="form-info__value form-info__value--cat-name" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
-          </div>
-          <div class="form-info__wrapper">
-            <label class="form-info__input-text form-info__input-text--cat-weight" for="cat-weight">Вес (кг):*</label>
-            <input class="form-info__value form-info__value--cat-weight" type="text" name="cat-weight" id="cat-weight" placeholder="7">
-          </div>
-          <div class="form-info__wrapper">
-            <label class="form-info__input-text form-info__input-text--cat-age" for="cat-age">Возраст (Лет)</label>
-            <input class="form-info__value form-info__value--cat-age" type="text" name="cat-age" id="cat-age" placeholder="7">
-          </div>
-          <div class="form-info__radio-block">
-            <div class="form-info__radio-wrapper form-info__radio-wrapper--start">
-              <input class="form-info__input-radio" type="radio" name="programm" id="lose-weight" checked> <!-- class="visually-hidden"-->
-              <label class="form-info__label-radio form-info__label-radio--active" for="lose-weight">Похудение</label>
+          <div class="form-info__block-container">
+            <div class="form-info__input-text-container">
+              <div class="form-info__wrapper">
+                <label class="form-info__input-text form-info__input-text--cat-name" for="cat-name">Имя:*</label>
+                <input class="form-info__value form-info__value--cat-name" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+              </div>
+              <div class="form-info__wrapper">
+                <label class="form-info__input-text form-info__input-text--cat-weight" for="cat-weight">Вес (кг):*</label>
+                <input class="form-info__value form-info__value--cat-weight" type="text" name="cat-weight" id="cat-weight" placeholder="7">
+              </div>
+              <div class="form-info__wrapper">
+                <label class="form-info__input-text form-info__input-text--cat-age" for="cat-age">Возраст (Лет)</label>
+                <input class="form-info__value form-info__value--cat-age" type="text" name="cat-age" id="cat-age" placeholder="7">
+              </div>
             </div>
-            <div class="form-info__radio-wrapper">
-              <input class="form-info__input-radio" type="radio" name="programm" id="get-fat"> <!-- class="visually-hidden"-->
-              <label class="form-info__label-radio" for="get-fat">Набор массы</label>
-            </div>
-            <div class="form-info__radio-wrapper">
-              <input class="form-info__input-radio" type="radio" name="programm" id="get-advise"> <!-- class="visually-hidden"-->
-              <label class="form-info__label-radio" for="get-advise">Не знаю (Нужен ваш совет)</label>
+            <div class="form-info__radio-block">
+              <div class="form-info__radio-wrapper form-info__radio-wrapper--start">
+                <input class="form-info__input-radio" type="radio" name="programm" id="lose-weight" checked> <!-- class="visually-hidden"-->
+                <label class="form-info__label-radio form-info__label-radio--active" for="lose-weight">Похудение</label>
+              </div>
+              <div class="form-info__radio-wrapper">
+                <input class="form-info__input-radio" type="radio" name="programm" id="get-fat"> <!-- class="visually-hidden"-->
+                <label class="form-info__label-radio" for="get-fat">Набор массы</label>
+              </div>
+              <div class="form-info__radio-wrapper">
+                <input class="form-info__input-radio" type="radio" name="programm" id="get-advise"> <!-- class="visually-hidden"-->
+                <label class="form-info__label-radio" for="get-advise">Не знаю (Нужен ваш совет)</label>
+              </div>
             </div>
           </div>
           <h3 class="form-info__title form-info__title--decor-contacts">Контактные данные (владельца кота)</h3>
-          <div class="form-info__input-text-wrapper">
-            <label class="form-info__input-text-data form-info__input-text-data--email" for="email">E-mail:*</label>
-            <input class="form-info__contacts-data form-info__contacts-data--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-          </div>
-          <div class="form-info__input-text-wrapper">
-            <label class="form-info__input-text-data form-info__input-text-data--phone" for="phone">Телефон:*</label>
-            <input class="form-info__contacts-data form-info__contacts-data--tel" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+          <div class="form-info__block-container form-info__block-container--contacts">
+            <div class="form-info__input-text-wrapper">
+              <label class="form-info__input-text-data form-info__input-text-data--email" for="email">E-mail:*</label>
+              <input class="form-info__contacts-data form-info__contacts-data--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="form-info__input-text-wrapper">
+              <label class="form-info__input-text-data form-info__input-text-data--phone" for="phone">Телефон:*</label>
+              <input class="form-info__contacts-data form-info__contacts-data--tel" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
           <h3 class="form-info__title form-info__title--decor-comment">Комментарий</h3>
           <textarea class="form-info__comments" name="comments" id="comments" cols="37" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>

@@ -14,23 +14,7 @@
   min-width: 18px;
 }
 
-/* .main-navigation__menu-button::before {
-  position: absolute;
-  content: "";
-  background-color: #111;
-  width: 24px;
-  height: 3px;
-  transform: rotate(-45deg);
-}
 
-.main-navigation__menu-button::after {
-  position: absolute;
-  content: "";
-  background-color: #111;
-  width: 24px;
-  height: 3px;
-  transform: rotate(45deg);
-} */
 
 @media (min-width: $tablet-width) {
   .main-navigation {

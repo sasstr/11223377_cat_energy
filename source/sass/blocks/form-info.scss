@@ -10,8 +10,8 @@
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 18px;
-  color: #111;
-  font-weight: normal;
+  color: #111111;
+  font-weight: 400;
   text-transform: uppercase;
 
   &--decor-contacts,
@@ -21,7 +21,7 @@
     position: relative;
     font-size: 24px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: none;
   }
 
@@ -81,7 +81,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222;
+  color: #222222;
 
   &--cat-name {
     padding-right: 10px;
@@ -194,8 +194,9 @@
 .form-info__input-text-data {
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
+  color: #222222;
 
   &--email {
     position: relative;
@@ -235,9 +236,10 @@
   resize: none;
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   font: inherit;
+  color: rgb(68, 68, 68);
   padding-top: 14px;
   padding-left: 15px;
   padding-right: 15px;
@@ -264,10 +266,10 @@
   min-width: 280px;
   min-height: 40px;
   background-color: #68b738;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 9px;
@@ -295,25 +297,17 @@
   .form-info__title {
     display: block;
     width: 370px;
-    margin: 0;
-    padding: 0;
     margin-bottom: 66px;
     padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
-    color: #111;
-    font-weight: normal;
-    text-transform: uppercase;
 
     &--decor-contacts,
     &--decor-add,
     &--decor-comment {
-      position: relative;
       font-size: 36px;
       line-height: 36px;
-      font-weight: normal;
-      text-transform: none;
-      background-color: #fff;
+      background-color: #ffffff;
     }
 
     &--decor-comment {
@@ -401,12 +395,8 @@
       padding-left: 20px;
       padding-top: 17px;
       padding-bottom: 17px;
-      font: inherit;
-      color: #444444;
       font-size: 20px;
-      font-weight: 400;
       line-height: 20px;
-      text-transform: uppercase;
 
       &--cat-name {
         min-width: 567px;
@@ -501,11 +491,8 @@
   }
 
   .form-info__input-text-data {
-    color: #222222;
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
-    text-transform: uppercase;
 
     &--email {
       position: relative;
@@ -541,17 +528,11 @@
   .form-info__comments {
     min-width: 631px;
     min-height: 174px;
-    resize: none;
-    color: rgb(68, 68, 68);
     font-size: 20px;
-    font-weight: 400;
     line-height: 30px;
-    text-transform: uppercase;
-    font: inherit;
     padding-top: 17px;
     padding-left: 20px;
     padding-right: 17px;
-    border: 1px solid rgba(205, 205, 205, 0.5);
     margin-bottom: 69px;
   }
 
@@ -575,20 +556,9 @@
   }
 
   .form-info__button-form-submit {
-    font: inherit;
-    display: inline-block;
-    border: none;
     min-width: 283px;
     min-height: 52px;
-    background-color: #68b738;
-    color: #ffffff;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 9px;
-    padding-top: 11px;
     margin-bottom: 72px;
   }
 
@@ -603,5 +573,143 @@
     line-height: 16px;
     text-align: start;
     padding-left: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .form-info {
+    margin: 0 auto;
+  }
+
+  .form-info__block-container {
+    display: flex;
+
+    &--contacts {
+      min-width: 1220px;
+    }
+  }
+
+  .form-info__title {
+    display: block;
+    width: 322px;
+    margin-bottom: 66px;
+    padding-left: 0;
+
+    &--decor-contacts,
+    &--decor-add,
+    &--decor-comment {
+      font-size: 36px;
+      line-height: 36px;
+      background-color: #ffffff;
+    }
+
+    &--decor-comment {
+      width: 258px;
+      margin-bottom: 70px;
+    }
+
+    &--decor-contacts {
+      width: 595px;
+    }
+
+    &--decor-add {
+      width: 292px;
+    }
+
+    &--decor-contacts::before {
+      width: 5000px;
+      left: -1500px;
+    }
+
+    &--decor-comment::before {
+      position: absolute;
+      width: 5000px;
+      left: -1500px;
+    }
+
+    &--decor-add::before {
+      width: 5000px;
+      left: -1500px;
+    }
+  }
+
+  .form-info__input-text-container {
+    margin-right: 80px;
+  }
+
+  .form-info__radio-block {
+    min-width: 570px;
+  }
+
+  .form-info__value {
+    min-height: 52px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+
+    &--cat-name {
+      min-width: 506px;
+    }
+
+    &--cat-weight {
+      min-width: 475px;
+      padding-left: 19px;
+    }
+
+    &--cat-age {
+      min-width: 436px;
+      padding-left: 19px;
+      margin-bottom: 72px;
+    }
+  }
+
+  .form-info__input-text-data {
+    color: #222222;
+
+    &--email {
+      position: relative;
+    }
+
+    &--email::before {
+      right: -471px;
+    }
+
+    &--phone::before {
+      right: -462px;
+    }
+  }
+
+  .form-info__contacts-data {
+    min-height: 52px;
+
+    &--email {
+      min-width: 486px;
+    }
+
+    &--tel {
+      min-width: 472px;
+    }
+  }
+
+  .form-info__input-checkbox-block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .form-info__input-checkbox-wrapper {
+    min-width: 325px;
+    margin-bottom: 54px;
+  }
+
+  .form-info__button-form-submit {
+    min-width: 568px;
+    font-size: 20px;
+    margin-bottom: 72px;
+  }
+
+  .form-info__comments {
+    min-width: 1220px;
+    min-height: 174px;
+    margin-bottom: 71px;
   }
 }

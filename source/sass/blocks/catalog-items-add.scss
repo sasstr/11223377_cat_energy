@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  color: #111;
+  color: #111111;
   margin-top: 30px;
   margin-bottom: 28px;
 }
@@ -34,7 +34,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   padding-top: 188px;
@@ -65,10 +65,10 @@
     font-size: 36px;
     line-height: 36px;
     font-weight: normal;
-    color: #111;
+    color: #111111;
     margin-top: 30px;
     margin-bottom: 28px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: inline-block;
     min-width: 414px;
     padding-left: 37px;
@@ -110,8 +110,6 @@
     }
 }
 
-
-
 @media (min-width: $desktop-width) {
 
   .catalog-items-add {
@@ -132,7 +130,7 @@
   }
 
   .catalog-items-add__promo {
-    height: 289px;
+    min-height: 289px;
     width: 245px;
   }
 }
