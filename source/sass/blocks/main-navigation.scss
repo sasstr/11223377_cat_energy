@@ -33,10 +33,11 @@
 @media (min-width: $desktop-width) {
   .main-navigation {
     width: $desktop-width;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 0;
+    margin-right: 0;
     min-height: 59px;
     background-color: transparent;
   }

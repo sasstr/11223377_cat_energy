@@ -463,15 +463,11 @@
   }
 
   .form-info__contacts-data {
-    min-height: 45px;
-    border: 1px solid rgba(205, 205, 205, 0.5);
     padding-right: 40px;
-    font: inherit;
     color: #444444;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    text-transform: uppercase;
 
     &--email {
       min-width: 551px;
@@ -683,6 +679,7 @@
 
     &--email {
       min-width: 486px;
+      margin-right: 78px;
     }
 
     &--tel {
@@ -711,5 +708,6 @@
     min-width: 1220px;
     min-height: 174px;
     margin-bottom: 71px;
+    border-right: none;
   }
 }
