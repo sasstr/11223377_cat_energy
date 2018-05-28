@@ -115,14 +115,12 @@
     #e6e6e6 50%, #e6e6e6 100% );
     background-position: 0 620px;
     background-repeat: no-repeat;
-    width: 100%;
   }
 
   .example__wrapper {
     background-color: transparent;
     width: $tablet-width;
     min-height: 1082px;
-    margin: 0 auto;
   }
 
   .example__main-title {
@@ -194,28 +192,21 @@
 @media (min-width: $desktop-width) {
 
   .example {
-    background-color: #fff;
     background-image: linear-gradient(to right,
      #f2f2f2 0%, #f2f2f2 72.569%,
     #e6e6e6 72.569%, #e6e6e6 100% );
     background-position: 0 150px;
-    background-repeat: no-repeat;
-    width: 100%;
   }
 
   .example__wrapper {
-    background-color: transparent;
     width: $desktop-width;
     min-height: 679px;
-    margin: 0 auto;
   }
 
-  .example__main-title {
-    font-size: 60px;
-    line-height: 60px;
+  /* .example__main-title {
     padding-top: 46px;
     margin-bottom: 51px;
-  }
+  } */
 
   .example__content {
     font-size: 16px;
@@ -257,21 +248,21 @@
   .example__switch {
     font-size: 16px;
     line-height: 20px;
-  }
 
-  .example__switch--state-was {
-    position: absolute;
-    background-image: url(../img/tablet/before-desktop.png);
-    background-repeat: no-repeat;
-    top: -200px;
-    left: calc(48%);
-  }
+    &--state-was {
+      position: absolute;
+      background-image: url(../img/tablet/before-desktop.png);
+      background-repeat: no-repeat;
+      top: -200px;
+      left: calc(48%);
+    }
 
-  .example__switch--state-now {
-    position: absolute;
-    background-image: url(../img/tablet/after-desktop.png);
-    background-repeat: no-repeat;
-    top: -200px;
-    left: calc(48%);;
+    &--state-now {
+      position: absolute;
+      background-image: url(../img/tablet/after-desktop.png);
+      background-repeat: no-repeat;
+      top: -200px;
+      left: calc(48%);
+    }
   }
 }
