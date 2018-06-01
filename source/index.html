@@ -122,11 +122,29 @@
               <span class="example-description__block-price"> 15 000 руб.</span>
             </div>
           </div>
-          <div class="example__choose-state">
+          <div class="example__choose-state visually-hidden">
             <input class="visually-hidden" type="radio" name="switch-state" id="was" checked> <!--TODO Переделать разметку -->
             <label class="example__switch example__switch--state-was" for="was">Было</label>
             <input class="visually-hidden" type="radio" name="switch-state" id="now">
             <label class="example__switch example__switch--state-now" for="now">Стало</label>
+          </div>
+          <picture class="example__cat-after-picture">
+              <source media="(max-width:768px)" srcset="/img/cat-after-mobile.png">
+              <source media="(max-width:1300px)" srcset="/img/cat-after-mobile.png">
+              <img class="example__cat-after-image example__cat-after-image--after" src="/img/cat-after-mobile.png" alt="Кот после примения средства" >
+          </picture>
+          <picture class="example__cat-after-picture">
+              <source media="(max-width:768px)" srcset="/img/cat-before-mobile.png">
+              <source media="(max-width:1300px)" srcset="/img/cat-before-mobile.png">
+              <img class="example__cat-now-image example__cat-after-image--now" src="/img/cat-before-mobile.png" alt="Кот до примения средства" >
+          </picture>
+          <div class="example__choose-state-checkbox">
+              <span class="example__choose-state-checkbox-title example__choose-state-checkbox-title--was">Было</span>
+              <div class="example__choose-state-checkbox-slide">
+                <input class="example__choose-state-checkbox-slide-input" type="checkbox" value="None" id="checkbox-slide" name="check" checked >
+                <label class="example__choose-state-checkbox-slide-label" for="checkbox-slide"></label>
+              </div>
+              <span class="example__choose-state-checkbox-title example__choose-state-checkbox-title--now">Стало</span>
           </div>
         </div>
       </section>
