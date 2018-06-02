@@ -118,41 +118,41 @@
               <!-- <span class="example-description__content">затрачено времени</span> -->
             </div>
             <div class="example-description__block">
-              <span class="example-description__block-title example__title">Затраты на питание:</span><!--TODO  Переделать разметку перенести стили из example__title в example-description__block -->
+              <span class="example-description__block-title">Затраты на питание:</span><!--TODO  Переделать разметку перенести стили из example__title в example-description__block -->
               <span class="example-description__block-price"> 15 000 руб.</span>
             </div>
           </div>
-          <div class="example__choose-state visually-hidden">
+          <picture class="example__cat-after-picture">
+            <source media="(max-width:768px)" srcset="/img/cat-after-mobile.png">
+            <source media="(max-width:1300px)" srcset="/img/cat-after-mobile.png">
+            <img class="example__cat-after-image example__cat-after-image--after" src="/img/cat-after-mobile.png" alt="Кот после примения средства" >
+          </picture>
+          <picture class="example__cat-after-picture">
+              <source media="(max-width:768px)" srcset="/img/cat-before-mobile.png">
+              <source media="(max-width:1300px)" srcset="/img/cat-before-mobile.png">
+              <img class="example__cat-now-image example__cat-now-image--now" src="/img/cat-before-mobile.png" alt="Кот до примения средства" >
+          </picture>
+          <div class="example__choose-state">
             <input class="visually-hidden" type="radio" name="switch-state" id="was" checked> <!--TODO Переделать разметку -->
             <label class="example__switch example__switch--state-was" for="was">Было</label>
             <input class="visually-hidden" type="radio" name="switch-state" id="now">
             <label class="example__switch example__switch--state-now" for="now">Стало</label>
           </div>
-          <picture class="example__cat-after-picture">
-              <source media="(max-width:768px)" srcset="/img/cat-after-mobile.png">
-              <source media="(max-width:1300px)" srcset="/img/cat-after-mobile.png">
-              <img class="example__cat-after-image example__cat-after-image--after" src="/img/cat-after-mobile.png" alt="Кот после примения средства" >
-          </picture>
-          <picture class="example__cat-after-picture">
-              <source media="(max-width:768px)" srcset="/img/cat-before-mobile.png">
-              <source media="(max-width:1300px)" srcset="/img/cat-before-mobile.png">
-              <img class="example__cat-now-image example__cat-after-image--now" src="/img/cat-before-mobile.png" alt="Кот до примения средства" >
-          </picture>
-          <div class="example__choose-state-checkbox">
+          <!-- <div class="example__choose-state-checkbox visually-hidden">
               <span class="example__choose-state-checkbox-title example__choose-state-checkbox-title--was">Было</span>
               <div class="example__choose-state-checkbox-slide">
                 <input class="example__choose-state-checkbox-slide-input" type="checkbox" value="None" id="checkbox-slide" name="check" checked >
                 <label class="example__choose-state-checkbox-slide-label" for="checkbox-slide"></label>
               </div>
               <span class="example__choose-state-checkbox-title example__choose-state-checkbox-title--now">Стало</span>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
     <footer class="main-footer">
         <div class="main-footer__wrapper">
           <h3 class="main-footer__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="main-footer__contacts">ул. Большая<br>Конюшенная, д.19/8<br><span class="main-footer__contacts--city">Санкт-Петербург</span></p>
+          <p class="main-footer__contacts">ул. Большая<br>Конюшенная, д.19/8<br><span class="main-footer__contacts-city">Санкт-Петербург</span></p>
         </div>
         <div class="main-footer__map">
           <iframe class="main-footer__map-inframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2ssg!4v1524914187699" allowfullscreen></iframe>
