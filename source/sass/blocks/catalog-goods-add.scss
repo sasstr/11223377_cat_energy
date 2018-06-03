@@ -4,23 +4,23 @@
 }
 
 .catalog-goods-add__title {
+  margin: 0;
+  padding: 0;
   padding-top: 80px;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
-  color: #111;
+  font-weight: 400;
+  color: #111111;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-goods-add__content {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   text-align: center;
-  color: #444;
+  color: #444444;
   margin: 0;
   padding: 0;
   padding-bottom: 22px;
@@ -35,7 +35,7 @@
   text-transform: uppercase;
   vertical-align: middle;
   background-color: #f2f2f2;
-  color: #222;
+  color: #222222;
   min-width: 280px;
   min-height: 40px;
   padding-bottom: 9px;
@@ -57,16 +57,12 @@
     width: 324px;
     margin-top: 140px;
     padding-bottom: 0;
-    border: 1px solid rgba(205, 205, 205, .5);
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
   .catalog-goods-add__title {
     padding-top: 165px;
     font-size: 20px;
-    line-height: 20px;
-    font-weight: normal;
-    color: #111;
-    text-align: center;
   }
 
   .catalog-goods-add__content {
@@ -76,14 +72,9 @@
     margin-bottom: 37px;
   }
 
-  .catalog-goods-add__link { // TODO Придумать как прижать кнопку что бы она не зависила от контента который выше!
-    display: inline-block;
-    font-size: 16px;
-    line-height: 20px;
-    color: #444;
-    background-color: #f2f2f2;
+  .catalog-goods-add__link {
+    color: #444444;
     min-width: 249px;
-    min-height: 40px;
     padding-bottom: 9px;
     padding-top: 11px;
     margin-left: 38px;
@@ -92,7 +83,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .catalog-goods-add {
     display: flex;
     flex-direction: column;
@@ -109,20 +99,14 @@
   }
 
   .catalog-goods-add__content {
-    font-size: 16px;
-    line-height: 16px;
-    padding-bottom: 0px;
     width: 166px;
+    padding-bottom: 0px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .catalog-goods-add__link {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 20px;
     min-width: 169px;
-    min-height: 40px;
     padding-bottom: 12px;
     padding-top: 13px;
     margin-left: 0;
