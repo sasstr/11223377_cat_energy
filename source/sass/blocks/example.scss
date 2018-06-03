@@ -13,7 +13,7 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111;
+  color: #111111;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -21,11 +21,11 @@
 }
 
 .example__content {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: #444;
+  color: #444444;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
@@ -88,7 +88,6 @@
   justify-content: center;
   padding-bottom: 39px;
   padding-top: 35px;
-
 }
 
 .example__choose-state-checkbox-slide {
@@ -97,11 +96,9 @@
   border-radius: 6px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
-  background: rgb(255, 255, 255);
   position: relative;
   padding-bottom: 4px;
   padding-top: 4px;
-
 
   .example__choose-state-checkbox-slide-label {
     display: block;
@@ -148,11 +145,9 @@
 
 .example__cat-after-image {
   position: absolute;
-
 }
 
-
-/*
+  /*
 #was:checked~.example__switch--state-was::before {
   position: absolute;
   content: "";
@@ -178,12 +173,9 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .example {
-    background-color: #fff;
-    background-image: linear-gradient(to right,
-    #f2f2f2 0%, #f2f2f2 50%,
-    #e6e6e6 50%, #e6e6e6 100% );
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #e6e6e6 50%, #e6e6e6 100% );
     background-position: 0 620px;
     background-repeat: no-repeat;
   }
@@ -228,7 +220,7 @@
     line-height: 20px;
   }
 
-/*   .example__switch--state-was {
+  /*   .example__switch--state-was {
     position: relative;
 
     &::before {
@@ -256,16 +248,12 @@
       background-image: url(../img/tablet/after-desktop.png);
       background-repeat: no-repeat;
     }
-
   }*/
 }
 
 @media (min-width: $desktop-width) {
-
   .example {
-    background-image: linear-gradient(to right,
-      #f2f2f2 0%, #f2f2f2 72.569%,
-      #e6e6e6 72.569%, #e6e6e6 100%);
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 72.569%, #e6e6e6 72.569%, #e6e6e6 100%);
     background-position: 0 150px;
   }
 
@@ -308,7 +296,7 @@
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    color: #111;
+    color: #111111;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -323,7 +311,7 @@
 
     &--state-was {
       position: absolute;
-      background-image: url(../img/tablet/before-desktop.png);
+      background-image: url("../img/tablet/before-desktop.png");
       background-repeat: no-repeat;
       top: -200px;
       left: calc(48%);
@@ -331,7 +319,7 @@
 
     &--state-now {
       position: absolute;
-      background-image: url(../img/tablet/after-desktop.png);
+      background-image: url("../img/tablet/after-desktop.png");
       background-repeat: no-repeat;
       top: -200px;
       left: calc(48%);

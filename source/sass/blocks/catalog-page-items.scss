@@ -45,7 +45,7 @@
   min-width: 280px;
   min-height: 40px;
   background-color: #68b738;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -64,7 +64,6 @@
   &:hover {
     background-color: #5eaa2f;
   }
-
 }
 
 .catalog-page-items__wrapper {
@@ -76,7 +75,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .catalog-page-items {
     min-height: 572px;
     width: 324px;
@@ -91,19 +89,19 @@
     &::before {
       position: absolute;
       content: "";
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       top: 0;
-      left: 0px;
+      left: 0;
     }
 
     &::after {
       position: absolute;
       content: "";
-      width: 0px;
-      height: 0px;
-      top: 0px;
-      left: 0px;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -122,7 +120,7 @@
     min-width: 249px;
     height: 40px;
     background-color: #68b738;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -131,8 +129,7 @@
     padding-bottom: 9px;
     padding-top: 11px;
     margin-left: 38px;
-    margin-bottom: 0px;
-
+    margin-bottom: 0;
   }
 
   .catalog-page-items__wrapper {
@@ -142,10 +139,6 @@
   .catalog-page-items__description {
     min-width: 150px;
   }
-
-  /* .catalog-page-items__product-photo {
-    margin:   auto 0;
-  } */
 }
 
 @media (min-width: $desktop-width) {
@@ -157,11 +150,11 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: #fff;
+    background-color: #ffffff;
     background-image: linear-gradient(
-    #fff 0%, #fff 140px,
-    #f2f2f2 140px, #f2f2f2 100% );
-    background-position: 0 0px;
+    #ffffff 0%, #ffffff 140px,
+    #f2f2f2 140px, #f2f2f2 100%);
+    background-position: 0 0;
     background-repeat: no-repeat;
     padding-bottom: 40px;
     padding-top: 60px;
@@ -169,19 +162,19 @@
     &::before {
       position: absolute;
       content: "";
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
       top: 0;
-      left: 0px;
+      left: 0;
     }
 
     &::after {
       position: absolute;
       content: "";
-      width: 0px;
-      height: 0px;
-      top: 0px;
-      left: 0px;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -201,7 +194,7 @@
     min-width: 169px;
     height: 40px;
     background-color: #68b738;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -211,7 +204,7 @@
     padding-top: 11px;
     margin-left: 38px;
     margin-right: 38px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .catalog-page-items__img--1 {
