@@ -113,6 +113,7 @@
     background: #68b738;
     transition: all 0.4s ease;
   }
+  
   .example__choose-state-checkbox-slide-input {
     visibility: hidden;
 
@@ -147,7 +148,7 @@
   position: absolute;
 }
 
-  /*
+/*
 #was:checked~.example__switch--state-was::before {
   position: absolute;
   content: "";
@@ -175,7 +176,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: #ffffff;
-    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #e6e6e6 50%, #e6e6e6 100% );
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #e6e6e6 50%, #e6e6e6 100%);
     background-position: 0 620px;
     background-repeat: no-repeat;
   }
