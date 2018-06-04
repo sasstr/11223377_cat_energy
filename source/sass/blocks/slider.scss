@@ -1,5 +1,5 @@
 .slider {
-  background-image: url(../img/index-background-mobile.jpg);
+  background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   min-height: 503px;
@@ -13,7 +13,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
 }
 
 .slider__content {
@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 29px;
 }
@@ -47,17 +47,17 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #68b738;
 
-    &:active {
-      background-color: #5eaa2f;
-      color: rgba(256, 256, 256, .3);
-    }
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(256, 256, 256, 0.3);
+  }
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
+  &:hover {
+    background-color: #5eaa2f;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,12 +71,11 @@
   }
 
   .slider__title {
-    display: inline-block;
     padding-left: 90px;
     padding-right: 237px;
     font-size: 60px;
     line-height: 60px;
-    color: #111;
+    color: #111111;
     margin-bottom: 27px;
   }
 
@@ -89,7 +88,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    color: #111;
+    color: #111111;
     text-transform: uppercase;
   }
 
@@ -117,7 +116,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .slider {
     min-width: $desktop-width;
     margin: 0 auto;
@@ -130,16 +128,12 @@
 
   .slider__title {
     box-sizing: content-box;
-    display: inline-block;
     width: 415px;
     min-height: 122px;
     padding-left: 83px;
-    padding-right: 0px;
+    padding-right: 0;
     margin-left: 0;
     margin-bottom: 33px;
-    font-size: 60px;
-    line-height: 60px;
-    color: #111;
     z-index: 4;
     background-color: transparent;
   }
@@ -155,7 +149,7 @@
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    color: #111;
+    color: #111111;
     text-transform: uppercase;
   }
 
@@ -183,7 +177,7 @@
 
     &:active {
       background-color: #5eaa2f;
-      color: rgba(256, 256, 256, .3);
+      color: rgba(256, 256, 256, 0.3);
     }
   }
 }
