@@ -8,11 +8,11 @@
 }
 
 .main-footer-html-academy-logo__link {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  font-weight: normal;
-  color: #444;
+  font-weight: 400;
+  color: #444444;
   position: relative;
 
   &::before {
@@ -22,16 +22,15 @@
   height: 34px;
   top: 0;
   right: -165px;
-  background-image: url(../img/footer_logo-html-academyai.svg);
+  background-image: url("../img/footer_logo-html-academyai.svg");
   background-repeat: no-repeat;
   transform: scale(1);
   }
 }
 
 @media (min-width: $tablet-width) {
-
   .main-footer-html-academy-logo {
-    min-height: 40x;
+    min-height: 40px;
     min-width: 162px;
     margin: 0 auto;
     padding-top: 70px;
@@ -40,11 +39,11 @@
   }
 
   .main-footer-html-academy-logo__link {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     line-height: 16px;
-    color: #444;
-    font-weight: normal;
+    color: #444444;
+    font-weight: 400;
     position: relative;
 
     &::before {
@@ -54,7 +53,7 @@
       height: 34px;
       top: 0;
       right: -55px;
-      background-image: url(../img/footer_logo-html-academyai.svg);
+      background-image: url("../img/footer_logo-html-academyai.svg");
       background-repeat: no-repeat;
     }
   }
