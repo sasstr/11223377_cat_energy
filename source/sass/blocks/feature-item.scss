@@ -44,11 +44,11 @@
 
   &--image-2::before {
     background-image: url("../img/retina/advantage-powder@1x.png");
-    }
+  }
 
   &--image-3::before {
     background-image: url("../img/retina/advantage-dining@1x.png");
-    }
+  }
 
   &--image-4::before {
     background-image: url("../img/retina/advantage-clock@1x.png");
@@ -107,7 +107,7 @@
     &--image-4::after {
       position: absolute;
       content: "4";
-      font-family: "Oswald", "Helvetica", sans-serif ;
+      font-family: "Oswald", "Helvetica", sans-serif;
       font-size: 281px;
       font-weight: 400;
       width: 80px;

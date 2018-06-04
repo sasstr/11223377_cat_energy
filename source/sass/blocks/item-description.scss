@@ -1,15 +1,14 @@
 
 .item-description__name,
 .item-description__value {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  color: #444;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {
-
   .item-description__name,
   .item-description__value {
     font-size: 16px;
@@ -40,7 +39,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .item-description__name,
   .item-description__value {
     font-size: 16px;
@@ -52,14 +50,14 @@
     padding-left: 38px;
 
     &::before {
-        position: absolute;
-        content: "";
-        width: 169px;
-        height: 1px;
-        top: 27px;
-        left: 38px;
-        background-color: #cdcdcd;
-      }
+      position: absolute;
+      content: "";
+      width: 169px;
+      height: 1px;
+      top: 27px;
+      left: 38px;
+      background-color: #cdcdcd;
+    }
   }
 
   .item-description__value {
