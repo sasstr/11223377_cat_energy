@@ -41,9 +41,39 @@
 }
 
 .example__choose-state {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin: 0 auto;
-  /* min-height: 400px; */
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.example__container-input {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  position: relative;
+}
+
+.example__container-input::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 0px;
+  border-radius: 3px;
+  background-color: #68b738;
+  top: 4px;
+}
+
+#was:checked ~ .example__container-input::before {
+  height: 6px;
+  left: 5px;
+}
+
+#now:checked  ~ .example__container-input::before {
+  height: 6px;
+  right: 5px;
 }
 
 .example__switch {
