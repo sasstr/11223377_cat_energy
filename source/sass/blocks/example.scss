@@ -60,18 +60,18 @@
   position: absolute;
   content: "";
   width: 35px;
-  height: 0px;
+  height: 0;
   border-radius: 3px;
   background-color: #68b738;
   top: 4px;
 }
 
-#was:checked ~ .example__container-input::before {
+.example__switch-input--was:checked ~ .example__container-input::before {
   height: 6px;
   left: 5px;
 }
 
-#now:checked  ~ .example__container-input::before {
+.example__switch-input--now:checked ~ .example__container-input::before {
   height: 6px;
   right: 5px;
 }
