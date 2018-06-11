@@ -36,11 +36,12 @@
   &--decor-contacts::before {
     position: absolute;
     content: "";
-    width: 99px;
+    width: 100px;
     height: 3px;
     top: 15px;
     right: -97px;
     background-color: #68b738;
+    z-index: -1;
   }
 
   &--decor-comment::before {
@@ -295,7 +296,6 @@
   }
 
   .form-info__title {
-    display: block;
     width: 370px;
     margin-bottom: 66px;
     padding-left: 40px;
@@ -326,7 +326,7 @@
     &--decor-contacts::before {
       position: absolute;
       content: "";
-      width: 1440px;
+      width: 100vw;
       height: 3px;
       top: 15px;
       left: -300px;
@@ -335,20 +335,16 @@
     }
 
     &--decor-comment::before {
-      position: absolute;
-      content: "";
-      width: 1440px;
-      height: 3px;
+      width: 100vw;
       top: 15px;
       left: -300px;
-      background-color: #68b738;
       z-index: -1;
     }
 
     &--decor-add::before {
       position: absolute;
       content: "";
-      width: 1440px;
+      width: 100vw;
       height: 3px;
       top: 15px;
       left: -300px;
@@ -613,14 +609,18 @@
     }
 
     &--decor-contacts::before {
-      width: 5000px;
-      left: -1500px;
+      width: 100vw;
+      /* left: -1500px; */
     }
 
     &--decor-comment::before {
       position: absolute;
-      width: 5000px;
-      left: -1500px;
+      height: 3px;
+      width: 100vw;
+      background-origin: content-box;
+      background-color: #68b738;
+      /* width: 5000px;
+      left: -1500px; */
     }
 
     &--decor-add::before {
