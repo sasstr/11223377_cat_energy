@@ -329,7 +329,7 @@
       width: 100vw;
       height: 3px;
       top: 15px;
-      left: -300px;
+      left: calc( - (100vw - 1300px) / 2 );
       background-color: #68b738;
       z-index: -1;
     }
@@ -337,7 +337,7 @@
     &--decor-comment::before {
       width: 100vw;
       top: 15px;
-      left: -300px;
+      left: calc( - (100vw - 1300px) / 2 );
       z-index: -1;
     }
 
@@ -347,14 +347,10 @@
       width: 100vw;
       height: 3px;
       top: 15px;
-      left: -300px;
+      left: calc( - (100vw - 1300px) / 2 );
       background-color: #68b738;
       z-index: -1;
     }
-  }
-
-  .form-info__wrapper {
-    margin-bottom: 15px;
   }
 
   .form-info__radio-wrapper {
@@ -545,6 +541,19 @@
     line-height: 20px;
     text-transform: uppercase;
     padding-left: 16px;
+    position: relative;
+
+    ::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      border: 1px solid #cdcdcd;
+      top: 0;
+      left: 0;
+      /* background-image: url(../img/);
+      background-repeat: no-repeat; */
+    }
   }
 
   .form-info__button-form-submit {
@@ -583,7 +592,7 @@
 
   .form-info__title {
     display: block;
-    width: 322px;
+    width: 323px;
     margin-bottom: 66px;
     padding-left: 0;
 
@@ -619,14 +628,16 @@
       width: 100vw;
       background-origin: content-box;
       background-color: #68b738;
-      /* width: 5000px;
-      left: -1500px; */
     }
 
     &--decor-add::before {
-      width: 5000px;
-      left: -1500px;
+      width: 100vw;
     }
+  }
+
+  .form-info__wrapper {
+    display: flex;
+    align-items: baseline;
   }
 
   .form-info__input-text-container {
@@ -642,16 +653,19 @@
     border: 1px solid rgba(205, 205, 205, 0.5);
 
     &--cat-name {
-      min-width: 506px;
+      //min-width: 506px;
+      width: 100%;
     }
 
     &--cat-weight {
-      min-width: 475px;
+      //min-width: 475px;
+      width: 100%;
       padding-left: 19px;
     }
 
     &--cat-age {
-      min-width: 436px;
+      //min-width: 436px;
+      width: 100%;
       padding-left: 19px;
       margin-bottom: 72px;
     }
