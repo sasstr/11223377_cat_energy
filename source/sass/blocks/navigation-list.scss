@@ -67,11 +67,14 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 696px;
-    min-width: 470px;
+    min-width: 680px;
+    background-image: url("../img/desktop/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 110px;
 
-    &::before {
+/*     &::before {
       position: absolute;
       content: "";
       width: 680px;
@@ -80,11 +83,12 @@
       right: -110px;
       z-index: -1;
       background-image: url("../img/desktop/index-background-desktop.jpg");
-    }
+    } */
 
     &--inner-page {
       min-height: 100px;
       min-width: 470px;
+      background-image: none;
     }
 
     &--inner-page::before {
@@ -94,6 +98,8 @@
       height: 0;
       top: 0;
       right: 0;
+      z-index: 0;
+      background-image: none;
     }
   }
 
@@ -102,6 +108,7 @@
     color: #ffffff;
     padding-top: 24px;
     padding-bottom: 9px;
+    margin-left: 36px;
     display: inline-block;
 
     &--inner-page {

@@ -41,7 +41,6 @@
     top: 15px;
     right: -97px;
     background-color: #68b738;
-    z-index: -1;
   }
 
   &--decor-comment::before {
@@ -324,13 +323,11 @@
     }
 
     &--decor-contacts::before {
-      position: absolute;
-      content: "";
       width: 100vw;
       height: 3px;
       top: 15px;
+      right: 0;
       left: calc((708px - 100vw)/2);
-      background-color: #68b738;
       z-index: -1;
     }
 
@@ -618,13 +615,10 @@
     }
 
     &--decor-contacts::before {
-      width: 100vw;
       left: calc((1300px - 100vw)/2);
     }
 
     &--decor-comment::before {
-      position: absolute;
-      height: 3px;
       width: 100vw;
       left: calc((1300px - 100vw)/2);
       background-origin: content-box;
