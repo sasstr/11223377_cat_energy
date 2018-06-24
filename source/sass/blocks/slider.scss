@@ -92,9 +92,6 @@
   }
 
   .slider__image {
-    background-image: none;
-    background-repeat: no-repeat;
-    background-position: center;
     min-width: 609px;
     min-height: 709px;
   }
@@ -155,9 +152,8 @@
   .slider__image {
     position: absolute;
     top: -100px;
-    left: 420px;
-    min-height: 289px;
-    background-image: none;
+    left: 490px;
+    min-height: 499px;
   }
 
   .slider__link {
