@@ -6,6 +6,9 @@
   min-height: 65px;
   width: 320px;
   margin: 0 auto;
+  background-image: url("../img/logo_img_mobile_cat_energy.svg");
+  background-repeat: no-repeat;
+  background-position-y: 11px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +20,7 @@
     min-height: 65px;
     width: $tablet-width;
     margin: 0 auto;
+    background-image: none;
   }
 }
 

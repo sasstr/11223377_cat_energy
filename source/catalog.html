@@ -11,13 +11,15 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-navigation__link" href="index.html">
-          <div class="main-navigation__logo logo">
-            <img class="logo__image" src="img/logo_img_mobile_cat_energy.svg" height="38" width="33" alt="Логотип Cat Energy">
-            <img class="logo__image" src="img/logo_cat_energy_mobile.svg" height="18" width="101" alt="Логотип Cat Energy">
-            <!--   span class="logo__title visually-hidden">Cat energy</span>   -->
-          </div>
-        </a>
+        <div class="main-navigation__logo">
+          <a class="main-navigation__link" href="index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/retina/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/retina/logo-tablet.svg">
+              <img class="main-navigation__link-image" src="img/retina/logo-mobile-header.svg" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+        </div>
         <button class="main-navigation__menu-button  main-navigation__menu-button--closed main-navigation__menu-button--no-js"><span ></span></button><!--class="visually-hidden"  -->
         <ul class="main-navigation__list navigation-list navigation-list--inner-page"> <!-- visually-hidden   -->
           <li class="navigation-list__item">

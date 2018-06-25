@@ -5,7 +5,14 @@
 
 .main-navigation__logo {
   display: inline-block;
+  text-align: center;
   position: relative;
+  padding-top: 24px;
+}
+
+.main-navigation__link-image {
+  width: 101px;
+  height: 18px;
 }
 
 @media (max-width: $tablet-width) {
