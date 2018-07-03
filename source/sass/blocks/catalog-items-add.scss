@@ -16,7 +16,7 @@
   position: absolute;
   content: "";
   width: 53px;
-  height: 2px;
+  height: 3px;
   top: 15px;
   right: -20px;
   background-color: #68b738;
@@ -74,13 +74,9 @@
   }
 
   .catalog-items-add__title::before {
-    position: absolute;
-    content: "";
-    width: 1440px;
-    height: 2px;
-    top: 15px;
-    left: -300px;
-    background-color: #68b738;
+    width: 100vw;
+    right: 0;
+    left: calc( (690px - 100vw) / 2  );
     z-index: -1;
   }
 
