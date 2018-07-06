@@ -9,18 +9,9 @@
   color: #111111;
   text-transform: uppercase;
   padding-top: 24px;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
   display: inline-block;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 1px;
-    top: 65px;
-    left: 0;
-    background-color: #e6e6e6;
-  }
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -35,8 +26,28 @@
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
-}
+  position: relative;
 
+  &--first-item::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #e6e6e6;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 65px;
+    left: 0;
+    background-color: #e6e6e6;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .navigation-list {
@@ -49,6 +60,26 @@
     text-align: center;
     margin-left: 36px;
     margin-right: 0;
+
+    &--first-item::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #e6e6e6;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 65px;
+      left: 0;
+      background-color: #e6e6e6;
+    }
 
     &--first-item {
       margin-left: 0;
@@ -117,8 +148,6 @@
     font-size: 20px;
     color: #ffffff;
     padding-top: 24px;
-    padding-bottom: 9px;
-    /* margin-left: 36px; */
     display: inline-block;
 
     &--inner-page {
