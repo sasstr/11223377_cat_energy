@@ -327,7 +327,7 @@
       height: 3px;
       top: 15px;
       right: 0;
-      left: calc((708px - 100vw)/2);
+      left: calc((708px - 100vw) / 2);
       z-index: -1;
     }
 
@@ -344,7 +344,7 @@
       width: 100vw;
       height: 3px;
       top: 15px;
-      left: calc((708px - 100vw)/2);
+      left: calc((708px - 100vw) / 2);
       background-color: #68b738;
       z-index: -1;
     }
@@ -615,19 +615,19 @@
     }
 
     &--decor-contacts::before {
-      left: calc((1300px - 100vw)/2);
+      left: calc((1300px - 100vw) / 2);
     }
 
     &--decor-comment::before {
       width: 100vw;
-      left: calc((1300px - 100vw)/2);
+      left: calc((1300px - 100vw) / 2);
       background-origin: content-box;
       background-color: #68b738;
     }
 
     &--decor-add::before {
       width: 100vw;
-      left: calc((1300px - 100vw)/2);
+      left: calc((1300px - 100vw) / 2);
     }
   }
 
