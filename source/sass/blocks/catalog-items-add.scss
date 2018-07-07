@@ -71,13 +71,13 @@
     display: inline-block;
     min-width: 414px;
     padding-left: 37px;
-  }
 
-  .catalog-items-add__title::before {
-    width: 100vw;
-    right: 0;
-    left: calc((690px - 100vw) / 2);
-    z-index: -1;
+    &::before {
+      width: 100vw;
+      right: 0;
+      left: calc((690px - 100vw) / 2);
+      z-index: -1;
+    }
   }
 
   .catalog-items-add__promo {
@@ -91,17 +91,17 @@
     padding-left: 420px;
     padding-right: 125px;
     text-align: start;
-  }
 
-  .catalog-items-add__promo-content::before {
-    position: absolute;
-    content: "";
-    width: 55px;
-    height: 60px;
-    top: 65px;
-    left: 113px;
-    background-image: url("../img/buscket-promo-block.svg");
-    background-repeat: no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 55px;
+      height: 60px;
+      top: 65px;
+      left: 113px;
+      background-image: url("../img/buscket-promo-block.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -113,6 +113,10 @@
 
   .catalog-items-add__wrapper {
     display: flex;
+  }
+
+  .catalog-items-add__title::before {
+    left: calc((1300px - 100vw) / 2);
   }
 
   .catalog-items-add__promo-content {
