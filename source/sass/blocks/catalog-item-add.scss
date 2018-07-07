@@ -121,7 +121,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-item-add {
-    width: 975px;
+    width: 935px;
     min-height: 71px;
     position: relative;
     display: flex;
@@ -134,7 +134,7 @@
       width: 895px;
       height: 1px;
       top: 0;
-      left: 0;
+      left: 38px;
       background-color: #cdcdcd;
     }
   }
@@ -144,7 +144,8 @@
     height: 40px;
     padding-bottom: 12px;
     padding-top: 13px;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
+    margin-top: 16px;
     margin-left: 38px;
   }
 }

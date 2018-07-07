@@ -1,6 +1,27 @@
 .catalog-goods-add {
   min-height: 210px;
   padding-bottom: 25px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: -20px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 210px;
+    left: -20px;
+    background-color: #ededed;
+  }
 }
 
 .catalog-goods-add__title {
@@ -58,6 +79,26 @@
     margin-top: 140px;
     padding-bottom: 0;
     border: 1px solid rgba(205, 205, 205, 0.5);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #ededed;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: #ededed;
+    }
   }
 
   .catalog-goods-add__title {

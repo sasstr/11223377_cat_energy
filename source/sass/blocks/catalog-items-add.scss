@@ -108,6 +108,7 @@
 @media (min-width: $desktop-width) {
   .catalog-items-add {
     min-width: $desktop-width;
+    margin: 0;
   }
 
   .catalog-items-add__wrapper {
@@ -124,7 +125,9 @@
   }
 
   .catalog-items-add__promo {
+    background-image: url("../img/retina/gift-photo-desktop@1x.jpg");
     min-height: 289px;
     width: 245px;
+    margin-left: 80px;
   }
 }

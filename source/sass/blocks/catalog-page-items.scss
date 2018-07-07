@@ -94,11 +94,7 @@
   }
 
   .catalog-page-items__title {
-    display: inline-block;
     font-size: 20px;
-    line-height: 20px;
-    padding-top: 24px;
-    padding-bottom: 14px;
     margin-left: 98px;
     min-width: 145px;
   }
@@ -155,14 +151,7 @@
   }
 
   .catalog-page-items__title {
-    display: inline-block;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 14px;
     margin-left: 60px;
-    min-width: 145px;
   }
 
   .catalog-page-items__order-button {
@@ -180,6 +169,7 @@
 
   .catalog-page-items__description {
     min-width: 245px;
+    margin-bottom: 33px;
   }
 
   .catalog-page-items__product-photo {
