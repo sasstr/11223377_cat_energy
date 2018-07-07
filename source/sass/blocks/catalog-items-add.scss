@@ -75,7 +75,7 @@
     &::before {
       width: 100vw;
       right: 0;
-      left: calc((690px - 100vw) / 2);
+      left: calc((690px - 102vw) / 2);
       z-index: -1;
     }
   }
@@ -116,7 +116,7 @@
   }
 
   .catalog-items-add__title::before {
-    left: calc((1300px - 100vw) / 2);
+    left: calc((1300px - 102vw) / 2);
   }
 
   .catalog-items-add__promo-content {

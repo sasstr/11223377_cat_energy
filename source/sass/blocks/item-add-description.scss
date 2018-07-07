@@ -34,3 +34,19 @@
     min-width: 96px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item-add-description {
+    margin-right: 0;
+  }
+
+  .item-add-description__name {
+    text-align: start;
+    min-width: 242px;
+  }
+
+  .item-add-description__value {
+    text-align: start;
+    min-width: 45px;
+  }
+}

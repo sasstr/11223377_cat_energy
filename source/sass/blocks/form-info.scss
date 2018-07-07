@@ -327,14 +327,14 @@
       height: 3px;
       top: 15px;
       right: 0;
-      left: calc((708px - 100vw) / 2);
+      left: calc((708px - 102vw) / 2);
       z-index: -1;
     }
 
     &--decor-comment::before {
       width: 100vw;
       top: 15px;
-      left: calc((708px - 100vw) / 2);
+      left: calc((708px - 102vw) / 2);
       z-index: -1;
     }
 
@@ -344,7 +344,7 @@
       width: 100vw;
       height: 3px;
       top: 15px;
-      left: calc((708px - 100vw) / 2);
+      left: calc((708px - 102vw) / 2);
       background-color: #68b738;
       z-index: -1;
     }
@@ -415,7 +415,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: calc((100vw - 708px) / 2);
+      width: calc((98vw - 708px) / 2);
       height: 1px;
       top: -1px;
       left: 100%;
@@ -425,7 +425,7 @@
     &::after {
       position: absolute;
       content: "";
-      width: calc((100vw - 708px) / 2);
+      width: calc((98vw - 708px) / 2);
       height: 1px;
       top: 100%;
       left: 100%;
@@ -615,19 +615,19 @@
     }
 
     &--decor-contacts::before {
-      left: calc((1300px - 100vw) / 2);
+      left: calc((1300px - 102vw) / 2);
     }
 
     &--decor-comment::before {
       width: 100vw;
-      left: calc((1300px - 100vw) / 2);
+      left: calc((1300px - 102vw) / 2);
       background-origin: content-box;
       background-color: #68b738;
     }
 
     &--decor-add::before {
       width: 100vw;
-      left: calc((1300px - 100vw) / 2);
+      left: calc((1300px - 102vw) / 2);
     }
   }
 
@@ -642,6 +642,26 @@
 
   .form-info__radio-block {
     min-width: 570px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: calc((100vw - 1300px) / 2);
+      height: 1px;
+      top: -1px;
+      left: 100%;
+      background-color: #ededed;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: calc((100vw - 1300px) / 2);
+      height: 1px;
+      top: 100%;
+      left: 100%;
+      background-color: #ededed;
+    }
   }
 
   .form-info__value {
