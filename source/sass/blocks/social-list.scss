@@ -31,8 +31,9 @@
 }
 
 .social-list__item-link {
-  min-width: 25px;
-  min-height: 25px;
+  display: inline-block;
+  width: 25px;
+  height: 35px;
 }
 
 @media (min-width: $tablet-width) {
