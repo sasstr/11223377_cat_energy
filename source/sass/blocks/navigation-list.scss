@@ -111,20 +111,6 @@
     justify-content: center;
     min-height: 696px;
     min-width: 680px;
-    background-image: url("../img/desktop/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position-x: 70px;
-
-    /*     &::before {
-      position: absolute;
-      content: "";
-      width: 680px;
-      height: 696px;
-      top: 0;
-      right: -110px;
-      z-index: -1;
-      background-image: url("../img/desktop/index-background-desktop.jpg");
-    } */
 
     &--inner-page {
       min-height: 100px;
