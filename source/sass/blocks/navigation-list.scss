@@ -1,5 +1,6 @@
 .navigation-list {
   @include reset-ul;
+  padding-top: 20px;
 }
 
 .navigation-list__item-link {
@@ -57,28 +58,17 @@
   }
 
   .navigation-list__item {
-    text-align: center;
     margin-left: 36px;
     margin-right: 0;
 
     &--first-item::before {
-      position: absolute;
-      content: "";
       width: 0;
       height: 0;
-      top: 0;
-      left: 0;
-      background-color: #e6e6e6;
     }
 
     &::after {
-      position: absolute;
-      content: "";
       width: 0;
       height: 0;
-      top: 65px;
-      left: 0;
-      background-color: #e6e6e6;
     }
 
     &--first-item {
@@ -130,10 +120,13 @@
     }
   }
 
+  .navigation-list__item--first-item {
+    padding-left: 100px;
+  }
+
   .navigation-list__item-link {
     font-size: 20px;
     color: #ffffff;
-    padding-top: 24px;
     display: inline-block;
 
     &--inner-page {

@@ -38,5 +38,10 @@
     background-repeat: no-repeat;
     background-position-x: 690px;
     background-position-y: 0;
+
+
+    &--inner-page {
+      background-image: none;
+    }
   }
 }

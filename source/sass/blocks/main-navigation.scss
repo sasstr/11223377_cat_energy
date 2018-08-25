@@ -11,6 +11,7 @@
   padding-bottom: 23px;
 }
 
+.main-navigation__link,
 .main-navigation__link-image {
   width: 101px;
   height: 18px;
@@ -92,6 +93,18 @@
 
   .main-navigation__menu-button {
     display: none;
+  }
+
+  .main-navigation__logo {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
+  .main-navigation__logo,
+  .main-navigation__link,
+  .main-navigation__link-image {
+    width: 173px;
+    height: 58px;
   }
 }
 
