@@ -161,11 +161,42 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 15px;
+  position: relative;
 }
 
 .form-info__input-radio {
   margin: 0;
   padding: 0;
+
+  &--get-advise:checked ~ .form-info__label-radio::before,
+  &--get-fat:checked ~ .form-info__label-radio::before,
+  &--lose-weight:checked ~ .form-info__label-radio::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 29px;
+    top: -3px;
+    left: -27px;
+    border: solid 1px #cdcdcd;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 7px #ffffff,
+      inset 0 0 0 14px #68b738;
+    cursor: pointer;
+  }
+
+  &--get-advise ~ .form-info__label-radio::before,
+  &--get-fat ~ .form-info__label-radio::before,
+  &--lose-weight ~ .form-info__label-radio::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 29px;
+    top: -3px;
+    left: -27px;
+    border: solid 1px #cdcdcd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
 
 .form-info__input-text-wrapper {
@@ -249,6 +280,41 @@
 
 .form-info__input-checkbox-wrapper {
   margin-bottom: 23px;
+}
+
+.form-info__input-checkbox {
+  margin: 0;
+  padding: 0;
+
+  &--sweetener:checked ~ .form-info__label-checkbox--sweetener::before,
+  &--drinking-water:checked ~ .form-info__label-checkbox--drinking-water::before,
+  &--milk:checked ~ .form-info__label-checkbox--milk::before,
+  &--vitamins:checked ~ .form-info__label-checkbox--vitamins::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 29px;
+    top: -3px;
+    left: -27px;
+    border: solid 1px #cdcdcd;
+    background-image: url("../img/retina/icon-tick.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &--sweetener ~ .form-info__label-checkbox--sweetener::before,
+  &--drinking-water ~ .form-info__label-checkbox--drinking-water::before,
+  &--milk ~ .form-info__label-checkbox--milk::before,
+  &--vitamins ~ .form-info__label-checkbox--vitamins::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 29px;
+    top: -3px;
+    left: -27px;
+    border: solid 1px #cdcdcd;
+    cursor: pointer;
+  }
 }
 
 .form-info__label-checkbox {
@@ -434,12 +500,38 @@
   }
 
   .form-info__label-radio {
-    color: #222222;
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
-    text-transform: uppercase;
-    padding-left: 15px;
+
+    &--get-advise:checked ~ .form-info__label-radio::before,
+    &--get-fat:checked ~ .form-info__label-radio::before,
+    &--lose-weight:checked ~ .form-info__label-radio::before {
+      position: absolute;
+      content: "";
+      width: 39px;
+      height: 39px;
+      top: -3px;
+      left: -27px;
+      border: solid 1px #cdcdcd;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 9px #ffffff,
+        inset 0 0 0 18px #68b738;
+      cursor: pointer;
+    }
+
+    &--get-advise ~ .form-info__label-radio::before,
+    &--get-fat ~ .form-info__label-radio::before,
+    &--lose-weight ~ .form-info__label-radio::before {
+      position: absolute;
+      content: "";
+      width: 39px;
+      height: 39px;
+      top: -3px;
+      left: -27px;
+      border: solid 1px #cdcdcd;
+      border-radius: 50%;
+      cursor: pointer;
+    }
   }
 
   .form-info__input-radio {
