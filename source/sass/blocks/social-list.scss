@@ -1,0 +1,61 @@
+.social-list {
+  position: relative;
+
+  @include reset-ul;
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+  min-height: 65px;
+  padding-top: 22px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    top: 0;
+    left: -20px;
+    background-color: #d9d9d9;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    top: 62px;
+    left: -20px;
+    background-color: #d9d9d9;
+  }
+}
+
+.social-list__item-link {
+  display: inline-block;
+  width: 25px;
+  height: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    width: 130px;
+    min-height: 35px;
+    padding-top: 70px;
+
+    &::before {
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+    }
+
+    &::after {
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+    }
+  }
+}

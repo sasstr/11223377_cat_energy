@@ -1,0 +1,67 @@
+
+.item-description__name,
+.item-description__value {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .item-description__name,
+  .item-description__value {
+    font-size: 16px;
+    min-width: 162px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .item-description__name {
+    position: relative;
+    padding-left: 38px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 249px;
+      height: 1px;
+      top: 27px;
+      left: 38px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  .item-description__value {
+    text-align: end;
+    padding-right: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-description__name,
+  .item-description__value {
+    font-size: 16px;
+    min-width: 84px;
+  }
+
+  .item-description__name {
+    position: relative;
+    padding-left: 38px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 169px;
+      height: 1px;
+      top: 27px;
+      left: 38px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  .item-description__value {
+    text-align: end;
+    padding-right: 38px;
+  }
+}

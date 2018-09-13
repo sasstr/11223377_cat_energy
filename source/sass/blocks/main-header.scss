@@ -1,0 +1,47 @@
+.main-header {
+  margin: 0 auto;
+}
+
+.main-header__wrapper {
+  min-height: 65px;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/logo_img_mobile_cat_energy.svg");
+  background-repeat: no-repeat;
+  background-position-y: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    margin: 0 auto;
+  }
+
+  .main-header__wrapper {
+    min-height: 65px;
+    width: $tablet-width;
+    margin: 0 auto;
+    background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    margin: 0 auto;
+  }
+
+
+  .main-header__wrapper {
+    min-height: 65px;
+    width: $desktop-width;
+    margin: 0 auto;
+    background-image: url("../img/desktop/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 690px;
+    background-position-y: 0;
+
+
+    &--inner-page {
+      background-image: none;
+    }
+  }
+}

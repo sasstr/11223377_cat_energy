@@ -1,0 +1,46 @@
+.main-footer-html-academy-logo {
+  min-height: 80px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-footer-html-academy-logo__link {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    top: 0;
+    right: -165px;
+    background-image: url("../img/htmlacademy (1).svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer-html-academy-logo {
+    min-height: 40px;
+    min-width: 162px;
+    padding-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-footer-html-academy-logo__link {
+    position: relative;
+
+    &::before {
+      right: -55px;
+    }
+  }
+}
